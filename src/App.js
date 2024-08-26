@@ -1,3 +1,6 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -8,6 +11,9 @@ import Portfolio from './Components/PortfolioPage/Portfolio';
 import Product from './Components/ProductPage/Product';
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <BrowserRouter>
