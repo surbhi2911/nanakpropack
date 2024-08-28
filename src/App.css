@@ -23,7 +23,6 @@ body {
 }
 
 
-
 /* Button Start*/
 
 .custom-button {
@@ -158,8 +157,8 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 
 .menu nav {
   padding-top: 6rem;
-  -webkit-perspective: 20rem;
   perspective: 20rem;
+  height: 100px;
 }
 
 .css-1pz7awu-MuiButtonBase-root-MuiIconButton-root {
@@ -256,7 +255,7 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 }
 
 .HeaderAppbar {
-  margin-top: -40px;
+  margin-top: -40px !important;
 }
 
 @media screen and (max-width:996px) {

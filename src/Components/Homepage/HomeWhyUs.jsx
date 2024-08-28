@@ -11,16 +11,11 @@ function HomeWhyUs() {
                 <div className='container'>
                     <div className='row justify-content-center'>
                         <div className='col-md-6 col-sm-12 col-10'>
-                            {/* <div className='col-10'>
-                                <h4 className='nanakTitle'>Why <span className='orangecolor'>Choose Us</span> </h4>
-                                <div className='fs-1 fw-normal'>Unmatched Quality, Innovative <span className='fw-semibold'>Packaging Solutions</span></div>
-                            </div> */}
                             <div class="two text-light">
                                 <h1 className='h1'>Why <span className='orangecolor'>Choose Us</span>
                                     <span className='span'>Unmatched Quality, Innovative <span className='fw-semibold span'>Packaging Solutions</span></span>
                                 </h1>
                             </div>
-
                         </div>
                         <div className='col-md-6 col-sm-12 col-10'>
                             <p className='fs-5 my-3 span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias labore repellendus, qui porro illo sint in ratione assumenda quidem.</p>

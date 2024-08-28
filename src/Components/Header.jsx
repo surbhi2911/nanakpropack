@@ -94,7 +94,7 @@ function Header() {
                                         </section>
                                         <section className="content">
                                             <label htmlFor="menu__trigger" className="entypo-menu">
-                                                <FaBars className='text-black'/>
+                                                <FaBars className='text-black' />
                                             </label>
                                         </section>
                                     </aside>
