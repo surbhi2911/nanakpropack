@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../Assets/Css/Homepage.css'
 import AllBtn from '../AllBtn'
 
 function HomeAbout() {

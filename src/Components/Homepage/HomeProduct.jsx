@@ -52,11 +52,11 @@ function HomeProduct() {
     };
     return (
         <>
-            <div>
+            <div className='with-bg-size py-5'>
                 {/* loader code https://codepen.io/skalanter/pen/mvxwyQ */}
-                <div className="container-lg ">
-                    <div className="abouttwo mx-auto my-4">
-                        <div class="two">
+                <div className="container-lg">
+                    <div className="abouttwo  mt-3 ms-md-2 col-lg-5 col-md-6 col-sm-7 col-12">
+                        <div class="two bg-light px-4 py-3">
                             <h1 className='h1'>Our <span className='orangecolor'>Featured Products</span>
                                 <span className='span'>Featured Designs<span className='fw-semibold span'>for Exceptional Products</span></span>
                             </h1>
