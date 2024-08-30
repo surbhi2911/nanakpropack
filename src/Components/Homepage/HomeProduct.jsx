@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import { ProductList } from '../../ProductList';
+import { TitleHeadLight } from '../TitleHead';
 
 
 
@@ -13,6 +14,7 @@ function HomeProduct() {
         initialSlide: 0,
         autoplay: true,
         swipe: true,
+        // speed: 30000000,
         arrows: false,
         pauseOnHover: false,
         dots: false,
@@ -52,19 +54,15 @@ function HomeProduct() {
     };
     return (
         <>
-            <div className='with-bg-size py-5'>
+            <div className='bg-body-secondary py-5'>
                 {/* loader code https://codepen.io/skalanter/pen/mvxwyQ */}
                 <div className="container-lg">
-                    <div className="abouttwo  mt-3 ms-md-2 col-lg-5 col-md-6 col-sm-7 col-12">
-                        <div class="two bg-light px-4 py-3">
-                            <h1 className='h1'>Our <span className='orangecolor'>Featured Products</span>
-                                <span className='span'>Featured Designs<span className='fw-semibold span'>for Exceptional Products</span></span>
-                            </h1>
-                        </div>
+                    <div className="col-11 ms-sm-0 ms-2">
+                        <TitleHeadLight textb1='Our' textb2='Featured Products' lineb1='Featured Designs' lineb2='for Exceptional Products' />
                     </div>
                     <Slider {...settings}>
                         {ProductList.map((Item, index) => (
-                            <div className="product-box" key={index} >
+                            <div className="product-box" key={index}>
                                 <div className="product-item text-decoration-none">
                                     <div className="product-item-image">
                                         <img src={Item.img} alt={`Product`} style={{ height: '150px', width: "190px", objectFit: 'contain', margin: 'auto' }} />
@@ -74,7 +72,7 @@ function HomeProduct() {
                                         <div className="product-item-category">
                                             Item {index}
                                         </div>
-                                        <div className="product-item-title">
+                                        <div className="product-item-title fs-6">
                                             {Item.heading2}
                                         </div>
                                         <div className="product-item-price">

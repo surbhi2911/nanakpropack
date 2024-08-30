@@ -1,34 +1,44 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";  // Import Material-UI components
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { styled } from "@mui/system";
 import { FaLeftLong } from "react-icons/fa6";
+import AllBtn from "../AllBtn";
+import { FaBoxOpen, FaRecycle, FaShieldAlt, FaChartLine, FaLightbulb, FaTruck } from 'react-icons/fa';
+import { TitleHead, TitleHeadLight } from "../TitleHead";
+
 const services = [
     {
-        title: "Web Development",
-        description: "Build modern and responsive websites with the latest technologies.",
-        icon: "bi bi-code-slash",
+        title: "Custom Packaging Design",
+        description: "Tailored designs that capture your brand's identity, ensuring your products stand out in a crowded market.",
+        icon: <FaBoxOpen />,
     },
     {
-        title: "Graphic Design",
-        description: "Create stunning visual designs that captivate and engage your audience.",
-        icon: "bi bi-brush",
+        title: "Sustainable Packaging Solutions",
+        description: "Eco-friendly materials that reduce waste, meet your sustainability goals, and appeal to environmentally conscious customers.",
+        icon: <FaRecycle />,
     },
     {
-        title: "Digital Marketing",
-        description: "Grow your business online with comprehensive digital marketing strategies.",
-        icon: "bi bi-bullseye",
+        title: "Protective Packaging",
+        description: "Robust, secure packaging that safeguards your products during transit, reducing damage and returns.",
+        icon: <FaShieldAlt />,
     },
     {
-        title: "Graphic Design",
-        description: "Create stunning visual designs that captivate and engage your audience.",
-        icon: "bi bi-brush",
+        title: "Brand Enhancement",
+        description: "Packaging that tells your story, builds brand recognition, and leaves a lasting impression on customers.",
+        icon: <FaChartLine />,
     },
     {
-        title: "Digital Marketing",
-        description: "Grow your business online with comprehensive digital marketing strategies.",
-        icon: "bi bi-bullseye",
+        title: "Innovative Packaging Technology",
+        description: "Cutting-edge solutions that combine aesthetics with functionality, enhancing both product appeal and usability.",
+        icon: <FaLightbulb />,
+    },
+    {
+        title: "Logistics and Fulfillment Support",
+        description: "Seamless integration with your supply chain to ensure timely delivery and optimized storage of your packaging.",
+        icon: <FaTruck />,
     },
 ];
+
 
 const StyledCard = styled(Card)(() => ({
     height: '100%',
@@ -56,34 +66,28 @@ function HomeService() {
         <>
             <div>
                 <div className='container-lg'>
-                    <div className='row'>
-                        <div className="abouttwo mx-auto mt-4 col-4">
-                            <div class="two">
-                                <h1 className='h1'>Our <span className='orangecolor'>services</span>
-                                    <span className='span fs-6'>services <span className='fw-semibold span'>That we provide</span></span>
-                                </h1>
-                            </div>
+                    <div className='row justify-content-center'>
+                        <div className="col-md-6 col-11">
+                            <TitleHeadLight textb1='Our' textb2='services' lineb1='services' lineb2='That we provide' />
                         </div>
-                        <div className='col-8 fs-5 lh-lg mt-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, culpa. Quae ab eaque magnam voluptatum autem nesciunt provident minima dicta? Lorem ipsum dolor sit amet consectetur.</div>
+                        <div className='col-md-6 col-11 fs-6 lh-lg mt-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, culpa. Quae ab eaque magnam voluptatum autem nesciunt provident minima dicta? Lorem ipsum dolor sit amet consectetur.</div>
                     </div>
                     <div>
                         <div>
                             <Container className="service-section py-5 mx-auto" fluid="xxl">
                                 <Row className="g-4 justify-content-center">
                                     {services.map((service, index) => (
-                                        <Col lg={3} md={5} key={index} className="card m-4">
+                                        <Col lg={3} md={4} sm={7} xs={11} key={index} className="card m-4">
                                             <Card className="service-card h-100 shadow-sm content">
-                                                <Card.Body className=" p-4 ps-0">
+                                                <Card.Body className=" pt-0 ps-0 pb-4">
                                                     {service.icon && (
-                                                        <i className={`${service.icon} service-icon mb-3`} style={{ fontSize: '3rem', color: '#ff7e5f' }}></i>
+                                                        <span className="fs-3">{service.icon}</span>
                                                     )}
                                                     <Card.Title className="mb-3 font-weight-bold">{service.title}</Card.Title>
                                                     <Card.Text className="text-muted">{service.description}</Card.Text>
-                                                    {/* {service.img && (
-                                                        <img src={service.img} alt="" className="img-fluid mb-3" style={{ maxHeight: 120 }} />
-                                                    )} */}
+
                                                 </Card.Body>
-                                                <Button variant="primary" className="btn-learn-more xyzbutton" style={{ width: "fit-content" }}>Learn More</Button>
+                                                <AllBtn text='Learn More' />
                                             </Card>
                                         </Col>
                                     ))}

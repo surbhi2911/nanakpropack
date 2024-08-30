@@ -156,6 +156,7 @@
     20% {
         -webkit-transform: scaleY(1.0)
     }
+
 }
 
 @keyframes sk-stretchdelay {
@@ -197,12 +198,11 @@
     overflow: hidden;
     margin-bottom: 1rem;
     font-family: 'Rubik', sans-serif;
-    margin: 20px 0;
+    margin: 20px 3px;
     background: #fff;
     height: 100%;
     border-top: 5px solid black;
     box-shadow: 0 10px 40px -3px rgba(0, 0, 0, 0.1);
-    /* transform: scale(0.97, 0.97); */
     transition: all .17s cubic-bezier(0.24, 0.71, 0.58, 0.57);
 }
 
@@ -464,7 +464,7 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     transition: all 0.7s ease;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     border-radius: 10px;
 
 }
@@ -481,6 +481,98 @@
     font-weight: 300;
 }
 
-
-
 /* Home Service end */
+
+/* Home Team Start */
+.team {
+    background-color: var(--black--);
+}
+
+.main {
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+.profile-card {
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+}
+
+.profileheight {
+    height: 280px;
+    width: 260px;
+    margin: 0 4px;
+
+}
+
+.profile-card:hover {
+    border-radius: 0px;
+    height: 260px;
+    padding: 30px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+.profile-card:hover .img {
+    transform: translateY(-60px);
+}
+
+.img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+}
+
+.caption h3 {
+    font-size: 21px;
+    font-family: sans-serif;
+}
+
+.caption p {
+    font-size: 15px;
+    color: #0c52a1;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+}
+
+.caption .social-links a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+}
+
+.social-links a:hover {
+    color: #0c52a1;
+}
+
+/* Home Team End */
