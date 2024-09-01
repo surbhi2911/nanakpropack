@@ -6,14 +6,16 @@ import HomeProduct from './HomeProduct'
 import HomeService from './HomeService'
 import '../../Assets/Css/Homepage.css'
 import HomeTeam from './HomeTeam'
+import Hometestimonial from './Hometestimonial'
 
 function Homepage() {
     return (
         <>
             <HomeAbout />
-            <HomeWhyUs />
             <HomeProduct />
+            <HomeWhyUs />
             <HomeService />
+            <Hometestimonial />
             <HomeTeam />
         </>
     )

@@ -64,8 +64,8 @@ function HomeService() {
 
     return (
         <>
-            <div>
-                <div className='container-lg'>
+            <div className="py-5">
+                <div className='container-lg mt-5'>
                     <div className='row justify-content-center'>
                         <div className="col-md-6 col-11">
                             <TitleHeadLight textb1='Our' textb2='services' lineb1='services' lineb2='That we provide' />

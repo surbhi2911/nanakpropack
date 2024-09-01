@@ -8,10 +8,12 @@ function HomeWhyUs() {
     return (
         <>
             <div className='bg-dark text-light py-5'>
-                <div className='container-lg'>
-                    <div className='row justify-content-center'>
-                        <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />
-                        <div className='col-md-6 col-sm-11 col-11'>
+                <div className='container-lg mt-5'>
+                    <div className='row justify-content-lg-center justify-content-start'>
+                        <div className='col-lg-6 col-sm-11 col-11'>
+                            <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />
+                        </div>
+                        <div className='col-lg-6 col-sm-11 col-11'>
                             <p className='fs-6 my-3 span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias labore repellendus, qui porro illo sint in ratione assumenda quidem.</p>
                         </div>
                         <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1'>

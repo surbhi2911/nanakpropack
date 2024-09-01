@@ -576,3 +576,43 @@
 }
 
 /* Home Team End */
+
+
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 25px;
+    line-height: 1;
+    opacity: .75;
+    color: var(--orange--);
+}
+
+.slick-next,
+.slick-prev {
+    top: 110%;
+}
+
+.slick-prev {
+    left: 46%;
+}
+
+.slick-next {
+    left: 55%;
+}
+
+.HomeTest {
+    background: url('https://img.freepik.com/premium-photo/beige-customer-feedback_1237698-2578.jpg?size=626&ext=jpg&ga=GA1.1.1984194079.1724409048&semt=ais_hybrid./Images/testimonialback.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0px 0px 0px 1500px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.slickback {
+    background: rgb(179 193 207 / 23%) !important;
+}

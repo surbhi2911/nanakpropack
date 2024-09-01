@@ -7,7 +7,7 @@ import { TitleHeadLight } from '../TitleHead';
 
 function HomeProduct() {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -19,6 +19,14 @@ function HomeProduct() {
         pauseOnHover: false,
         dots: false,
         responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
             {
                 breakpoint: 1024,
                 settings: {
@@ -56,14 +64,14 @@ function HomeProduct() {
         <>
             <div className='bg-body-secondary py-5'>
                 {/* loader code https://codepen.io/skalanter/pen/mvxwyQ */}
-                <div className="container-lg">
-                    <div className="col-11 ms-sm-0 ms-2">
+                <div className="container-lg my-5">
+                    <div className="col-11 ms-sm-0 ms-2 my-4">
                         <TitleHeadLight textb1='Our' textb2='Featured Products' lineb1='Featured Designs' lineb2='for Exceptional Products' />
                     </div>
                     <Slider {...settings}>
                         {ProductList.map((Item, index) => (
                             <div className="product-box" key={index}>
-                                <div className="product-item text-decoration-none">
+                                <div className="product-item mx-3 text-decoration-none">
                                     <div className="product-item-image">
                                         <img src={Item.img} alt={`Product`} style={{ height: '150px', width: "190px", objectFit: 'contain', margin: 'auto' }} />
                                         <div className="product-item-image-hover"></div>

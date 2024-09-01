@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
-import { TitleHead } from '../TitleHead';
+import { TitleHead, TitleHeadLight } from '../TitleHead';
 
 const teamMembers = [
     {
@@ -86,9 +86,9 @@ const teamMembers = [
 ];
 function HomeTeam() {
     return (
-        <div className="team pt-5">
-            <div className='container-lg'>
-                <TitleHead text1='Our' text2='Team' line1='Where Hard Work' line2='Meets Succes With Team' />
+        <div className="pt-5">
+            <div className='container-lg my-5'>
+                <TitleHeadLight textb1='Our' textb2='Team' lineb1='Where Hard Work' lineb2='Meets Succes With Team' />
                 <div class="main row justify-content-lg-evenly justify-content-center align-items-center">
 
                     {teamMembers.map((member, index) => (
