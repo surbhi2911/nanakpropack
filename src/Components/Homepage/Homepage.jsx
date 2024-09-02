@@ -7,10 +7,12 @@ import HomeService from './HomeService'
 import '../../Assets/Css/Homepage.css'
 import HomeTeam from './HomeTeam'
 import Hometestimonial from './Hometestimonial'
+import HomeCrousel from './HomeCrousel'
 
 function Homepage() {
     return (
         <>
+            <HomeCrousel />
             <HomeAbout />
             <HomeProduct />
             <HomeWhyUs />

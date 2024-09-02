@@ -10,7 +10,27 @@ import { FaAddressBook, FaBars, FaMailBulk, FaPhone } from 'react-icons/fa';
 import { MdQrCodeScanner } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Products', 'Portfolio', 'Contact Us', 'Company Info'];
+const pages = [
+    {
+        page: 'Home',
+        link: '/'
+    },
+    {
+        page: 'Products',
+        link: '/Product'
+    },
+    {
+        page: 'Portfolio',
+        link: '/PortFolio'
+    },
+    {
+        page: 'Contact Us',
+        link: '/Contactus'
+    },
+    {
+        page: 'Company Info',
+        link: '/Company'
+    }];
 
 function Header() {
     const [show, setShow] = useState(false);
@@ -88,7 +108,7 @@ function Header() {
                                         <section className="menu" style={{ height: "100px" }}>
                                             <nav>
                                                 {pages.map((page, i) => (
-                                                    <Link to="/" className='linkA ' key={i}>{page}</Link>
+                                                    <Link to={page.link} className='linkA ' key={i}>{page.page}</Link>
                                                 ))}
                                             </nav>
                                         </section>
@@ -127,7 +147,9 @@ function Header() {
                                         sx={{ my: 2, color: 'white', display: 'block' }}
                                         className='px-3 mx-2 text-nowrap fw-semibold text-center button'
                                     >
-                                        {page}
+                                        <Link to={page.link} className='text-decoration-none text-dark'>
+                                            {page.page}
+                                        </Link>
                                     </Button>
                                 ))}
                             </Box>
