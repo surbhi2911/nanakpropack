@@ -7,6 +7,7 @@
 
 body {
   background: var(--lightcolor--);
+  overflow-x: hidden;
 }
 
 .orangecolor {
@@ -28,8 +29,6 @@ body {
 .blackborder {
   border: 2px solid var(--black--);
 }
-
-
 
 .nanakTitle {
   font-size: 35px;
@@ -298,7 +297,6 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 }
 
 .Footericons:hover {
-  background: white;
   color: var(--blackgray--);
   border-radius: 20px;
 }
@@ -315,3 +313,4 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 .footerlinks:hover {
   color: var(--orange--);
 }
+

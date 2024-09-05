@@ -9,7 +9,9 @@ import Button from '@mui/material/Button';
 import { FaAddressBook, FaBars, FaMailBulk, FaPhone } from 'react-icons/fa';
 import { MdQrCodeScanner } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-
+import { Modal } from '@mui/material';
+import { QRCodeCanvas } from 'qrcode.react';
+import { TitleHeadLight } from './TitleHead';
 const pages = [
     {
         page: 'Home',
@@ -32,6 +34,7 @@ const pages = [
         link: '/Company'
     }];
 
+
 function Header() {
     const [show, setShow] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -50,6 +53,24 @@ function Header() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const qrData = `
+    Owner:Nupur Sharma
+
+    Company-Name:NanakProPack
+    
+    Tel No:+98 7048313227
+
+    EMAIL:contact@examplecompany.com
+    
+    Address
+
+    Visit Our Website :https://www.examplecompany.com
+
+    LinkedIn:https://www.linkedin.com/in/johndoe
+
+    Visit us for innovative packeging solutions!
+    
+    `;
 
     return (
         <>
@@ -154,7 +175,54 @@ function Header() {
                                 ))}
                             </Box>
                             <Box sx={{ flexGrow: 0 }}>
-                                <MdQrCodeScanner className='fs-3 text-dark' />
+                                <div onClick={handleShow}>
+                                    <MdQrCodeScanner className='fs-3 text-dark' />
+                                </div>
+
+                                <Modal
+                                    open={show}
+                                    onClose={handleClose}
+                                    aria-labelledby="child-modal-title"
+                                    aria-describedby="child-modal-description"
+                                >
+                                    <Box
+                                        sx={{
+                                            width: '100%',
+                                            maxWidth: 400,
+                                            bgcolor: '#fff',
+                                            borderRadius: '0px',
+                                            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
+                                            p: 4,
+                                            mx: 'auto',
+                                            my: '5vh',
+                                            // textAlign: 'center',
+                                            position: 'relative',
+                                        }}
+                                    >
+                                        <div className="text-center">
+                                            <QRCodeCanvas
+                                                value={qrData}
+                                                level={"H"}
+                                                style={{
+                                                    height: '60%',
+                                                    width: '60%',
+                                                    padding: '5px',
+                                                    border: '5px solid var(--orange--)',
+                                                    // borderRadius: '12px',
+                                                    backgroundColor: '#f8f9fa',
+                                                }}
+                                            />
+                                        </div>
+                                        <div className="my-5 overflow-x-hidden">
+                                            <TitleHeadLight
+                                                textb1="scan here to"
+                                                textb2="contact us"
+                                                lineb1="Scan Here to Show our Contact Details"
+                                                style={{ fontSize: '1.5rem', color: '#333', marginBottom: '16px' }}
+                                            />
+                                        </div>
+                                    </Box>
+                                </Modal>
                             </Box>
                         </Toolbar>
                     </Container>

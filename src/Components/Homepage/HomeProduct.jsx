@@ -70,13 +70,13 @@ function HomeProduct() {
                     </div>
                     <Slider {...settings}>
                         {ProductList.map((Item, index) => (
-                            <div className="product-box" key={index}>
+                            <div className="product-box" key={index} data-aos='fade' data-aos-duration='1200' data-aos-delay='1000'>
                                 <div className="product-item mx-3 text-decoration-none">
                                     <div className="product-item-image">
                                         <img src={Item.img} alt={`Product`} style={{ height: '150px', width: "190px", objectFit: 'contain', margin: 'auto' }} />
                                         <div className="product-item-image-hover"></div>
                                     </div>
-                                    <div className="product-item-content">
+                                    <div className="product-item-content" data-aos='fade'>
                                         <div className="product-item-category">
                                             Item {index}
                                         </div>
@@ -94,7 +94,6 @@ function HomeProduct() {
                             </div>
                         ))}
                     </Slider>
-                    {/* </div> */}
                 </div>
             </div>
         </>
