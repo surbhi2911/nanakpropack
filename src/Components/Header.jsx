@@ -94,7 +94,7 @@ function Header() {
             {/* TOP-LINE End */}
 
             {/* Header Start */}
-            <div className="container-lg position-sticky top-0 justify-content-center HeaderAppbar" style={{ transition: "all 0.3s ease-in-out", zIndex: 3, }}>
+            <div className="container-lg position-sticky top-0 justify-content-center HeaderAppbar" style={{ transition: "all 0.3s ease-in-out", zIndex: 100, }}>
                 <AppBar position="static" className="rounded-lg-pill appbarh">
                     <Container maxWidth="xl">
                         <Toolbar disableGutters>
