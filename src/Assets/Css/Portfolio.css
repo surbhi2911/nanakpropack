@@ -1,4 +1,4 @@
-.image-item {
+/* .image-item {
     position: relative;
     overflow: hidden;
     padding-top: 10px;
@@ -118,4 +118,77 @@
 
 .item11::before {
     content: "Duplex carton boxes";
+}
+
+ */
+
+
+.paper-box {
+    padding: 2px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+        0 0 20px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
+    overflow: hidden;
+}
+
+.paper-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #fff 0%, #ddd 100%);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 1;
+}
+
+.paper-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(315deg, #fff 0%, #ddd 100%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item:hover .overlay {
+    opacity: 1;
 }

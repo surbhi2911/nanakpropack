@@ -4,7 +4,7 @@ import { TitleHeadLight } from '../TitleHead'
 
 function HomeAbout() {
     return (
-        <div className='py-5 homeAbout' data-aos='fade' data-aos-duration='2000'>
+        <div className='py-5 my-3 homeAbout' data-aos='fade' data-aos-duration='2000'>
             <div className='container-lg my-5 pb-5'>
                 <div className='row justify-content-center align-items-center'>
                     <div className='col-md-6 col-11 px-0' data-aos='fade' data-aos-duration='1000' >

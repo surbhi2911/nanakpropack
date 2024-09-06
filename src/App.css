@@ -36,6 +36,111 @@ body {
   text-transform: uppercase;
 }
 
+body {
+  background: url(https://www.creativefabrica.com/wp-content/uploads/2023/07/30/Elegant-white-and-grey-Background-Graphics-75765082-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* whhatsapp button  */
+/* .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: all .7s;animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+.float:hover {
+  background-color: #FFF;
+  color: #25d366;
+}
+
+.my-float {
+  margin-top: 6px;
+} */
+
+
+.btn-whatsapp-pulse {
+  background: #25d366;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  font-size: 35px;
+  padding: 22px;
+  z-index: 10;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.btn-whatsapp-pulse-border {
+  bottom: 60px;
+  right: 20px;
+  animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #25d366;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* whhatsapp button  */
 
 /* Button Start*/
 
@@ -313,4 +418,3 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 .footerlinks:hover {
   color: var(--orange--);
 }
-

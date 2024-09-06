@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { FaAddressBook, FaBars, FaMailBulk, FaPhone } from 'react-icons/fa';
+import { FaAddressBook, FaBars, FaMailBulk, FaPhone, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 import { MdQrCodeScanner } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { Modal } from '@mui/material';
@@ -18,25 +18,27 @@ const pages = [
         link: '/'
     },
     {
-        page: 'Products',
-        link: '/Product'
-    },
-    {
         page: 'Portfolio',
         link: '/PortFolio'
+    },
+    {
+        page: 'Company Info',
+        link: '/CompanyInfo'
+    },
+    {
+        page: 'Products',
+        link: '/Product'
     },
     {
         page: 'Contact Us',
         link: '/Contactus'
     },
-    {
-        page: 'Company Info',
-        link: '/Company'
-    }];
+];
 
 
 function Header() {
     const [show, setShow] = useState(false);
+    const [showQr, setShowQr] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
         const handleScroll = () => {
@@ -53,6 +55,8 @@ function Header() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleCloseQr = () => setShowQr(false);
+    const handleShowQr = () => setShowQr(true);
     const qrData = `
     Owner:Nupur Sharma
 
@@ -175,13 +179,13 @@ function Header() {
                                 ))}
                             </Box>
                             <Box sx={{ flexGrow: 0 }}>
-                                <div onClick={handleShow}>
+                                <div onClick={handleShowQr}>
                                     <MdQrCodeScanner className='fs-3 text-dark' />
                                 </div>
 
                                 <Modal
-                                    open={show}
-                                    onClose={handleClose}
+                                    open={showQr}
+                                    onClose={handleCloseQr}
                                     aria-labelledby="child-modal-title"
                                     aria-describedby="child-modal-description"
                                 >
@@ -229,6 +233,10 @@ function Header() {
                 </AppBar>
             </div>
             {/* Header End */}
+            <a href="https://wa.me/7048313227?text=Hello,%20I'm%20interested%20to%20buy%20a%20product.%20Could%20you%20please%20provide%20more%20information?" className="btn-whatsapp-pulse btn-whatsapp-pulse-border" target="_blank">
+                <FaWhatsapp className='' />
+            </a>
+
 
         </>
     );

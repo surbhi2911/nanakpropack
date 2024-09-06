@@ -65,7 +65,7 @@ function HomeProduct() {
             <div className='bg-body-secondary py-5'>
                 {/* loader code https://codepen.io/skalanter/pen/mvxwyQ */}
                 <div className="container-lg my-5">
-                    <div className="col-11 ms-sm-0 ms-2 my-4">
+                    <div className="col-11 ms-sm-0 ms-2 my-5">
                         <TitleHeadLight textb1='Our' textb2='Featured Products' lineb1='Featured Designs' lineb2='for Exceptional Products' />
                     </div>
                     <Slider {...settings}>
