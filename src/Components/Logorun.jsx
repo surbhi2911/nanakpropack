@@ -45,26 +45,23 @@ function Logorun() {
     };
     let carddata = [
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
+            img: require('../Assets/Images/logos/Classmate_Logo.png'),
         },
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
+            img: require('../Assets/Images/logos/Crayola-Logo-1024x640.png'),
         },
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
+            img: require('../Assets/Images/logos/Faber-Castell-Logo.png'),
         },
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
+            img: require('../Assets/Images/logos/apsara-logo.jpg'),
         },
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
+            img: require('../Assets/Images/logos/bic .images.png'),
         },
         {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
-        },
-        {
-            img: require('../Assets/Images/box images/5491cb45125beafe3a10f335e9daee35.jpg'),
-        },
+            img: require('../Assets/Images/logos/images-3.jpg'),
+        }
 
     ];
     return (
@@ -81,9 +78,9 @@ function Logorun() {
                                     console.log(x);
                                     return (
                                         <>
-                                            <div className="p-2">
+                                            <div className="bg-light m-3" style={{ height: '140px' }}>
                                                 <div
-                                                    className="p-3 p-lg-5"
+                                                    className="p-3 p-lg-5 "
                                                 >
                                                     <img
                                                         src={x.img}

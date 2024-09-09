@@ -251,3 +251,44 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+
+.Mainsec1 .header {
+    width: 100%;
+    padding: 96px 0;
+    /* py-24: 6rem */
+    background-color: #f2e9d8;
+    text-align: center;
+}
+
+.Mainsec1 .header h1 {
+    font-size: 3.75rem;
+    /* text-6xl */
+    font-weight: bold;
+    margin-bottom: 16px;
+    /* mb-4 */
+    color: #fb9504;
+}
+
+.Mainsec1 .header nav {
+    color: #303849;
+}
+
+.Mainsec1 .header nav a {
+    color: #303849;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Mainsec1 .header nav a:hover {
+    color: #fb9504;
+}
+
+.Mainsec1 .header nav span {
+    margin: 0 8px;
+    /* mx-2 */
+}
+
+.Mainsec1 .header .active {
+    color: #fb9504;
+}

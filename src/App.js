@@ -10,6 +10,7 @@ import Contactus from './Components/ContactUsPage/Contactus';
 import Portfolio from './Components/PortfolioPage/Portfolio';
 import Product from './Components/ProductPage/Product';
 import CompanyInfo from './Components/Company-info Page/CompanyInfo';
+import PortfolioDetails from './Components/PortfolioPage/PortfolioDetails';
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/Product' element={<Product />} />
           <Route path='/Contactus' element={<Contactus />} />
           <Route path='/PortFolio' element={<Portfolio />} />
+          <Route path='/PortFolio/:id' element={<PortfolioDetails />} />
           <Route path='/CompanyInfo' element={<CompanyInfo />} />
         </Routes>
       </BrowserRouter>

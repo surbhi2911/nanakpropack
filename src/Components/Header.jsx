@@ -193,6 +193,7 @@ function Header() {
                                         sx={{
                                             width: '100%',
                                             maxWidth: 400,
+                                            minWidth: 200,
                                             bgcolor: '#fff',
                                             borderRadius: '0px',
                                             boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
@@ -217,13 +218,34 @@ function Header() {
                                                 }}
                                             />
                                         </div>
-                                        <div className="my-5 overflow-x-hidden">
+
+                                        <span className=''>
+                                            <Link
+                                                to={"tel:70483113227"}
+                                                className="nav-link navlinkhoverheader fw-bold text-decoration-none"
+                                                style={{ textAlign: 'center' }}
+                                            >
+                                                <span className="fs-4">
+                                                    <img
+                                                        height={25}
+                                                        width={25}
+                                                        src={require("../Assets/Images/reviews1.gif")}
+                                                        alt=""
+                                                        className="img-fluid"
+                                                    />
+                                                </span>{" "}
+                                                +(91) 704831 13227 <br />
+                                                Contact Us
+                                            </Link>
+                                        </span>
+                                        <div className="mb-5 mt-2 overflow-x-hidden">
                                             <TitleHeadLight
                                                 textb1="scan here to"
                                                 textb2="contact us"
                                                 lineb1="Scan Here to Show our Contact Details"
                                                 style={{ fontSize: '1.5rem', color: '#333', marginBottom: '16px' }}
                                             />
+
                                         </div>
                                     </Box>
                                 </Modal>

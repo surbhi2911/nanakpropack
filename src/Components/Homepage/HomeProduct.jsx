@@ -62,19 +62,19 @@ function HomeProduct() {
     };
     return (
         <>
-            <div className='bg-body-secondary py-5'>
+            <div className='bg-body-secondary py-5 overflow-x-hidden'>
                 {/* loader code https://codepen.io/skalanter/pen/mvxwyQ */}
                 <div className="container-lg my-5">
                     <div className="col-11 ms-sm-0 ms-2 my-5">
                         <TitleHeadLight textb1='Our' textb2='Featured Products' lineb1='Featured Designs' lineb2='for Exceptional Products' />
                     </div>
-                    <Slider {...settings}>
+                    <Slider {...settings} className='p-0 m-0'>
                         {ProductList.map((Item, index) => (
                             <div className="product-box" key={index} data-aos='fade' data-aos-duration='1200' data-aos-delay='1000'>
                                 <div className="product-item mx-3 text-decoration-none">
                                     <div className="product-item-image">
-                                        <img src={Item.img} alt={`Product`} style={{ height: '150px', width: "190px", objectFit: 'contain', margin: 'auto' }} />
-                                        <div className="product-item-image-hover"></div>
+                                        <img src={Item.img} alt={`Product`} style={{ height: '120px', width: "120px", objectFit: 'fill', margin: 'auto' }} />
+                                        {/* <div className="product-item-image-hover"></div> */}
                                     </div>
                                     <div className="product-item-content" data-aos='fade'>
                                         <div className="product-item-category">
@@ -87,7 +87,9 @@ function HomeProduct() {
                                             {Item.price}
                                         </div>
                                         <div className="button-pill">
-                                            <span>view</span>
+                                            <a href="/Product">
+                                                <span>view</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

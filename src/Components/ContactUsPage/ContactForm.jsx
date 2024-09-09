@@ -103,7 +103,7 @@ function ContactForm() {
     }
     return (
         <>
-            <div className="pb-5">
+            <div className="pb-5 overflow-x-hidden">
                 <div class="container overflow-hidden">
                     <div class="row g-4 p-3 my-5 m-0">
                         <div class="col-lg-4 section overflow-hidden d-flex align-items-center justify-content-center" data-aos="zoom-in-right" data-aos-duration="1800">

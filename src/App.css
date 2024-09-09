@@ -1,3 +1,4 @@
+
 :root {
   --orange--: #fb9504;
   --blackgray--: #fff;
@@ -5,10 +6,32 @@
   --black--: #303849;
 }
 
-body {
+
+/* scrollbar start */
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* scrollbar end */
+/* body {
   background: var(--lightcolor--);
   overflow-x: hidden;
-}
+} */
 
 .orangecolor {
   color: var(--orange--);
@@ -40,37 +63,9 @@ body {
   background: url(https://www.creativefabrica.com/wp-content/uploads/2023/07/30/Elegant-white-and-grey-Background-Graphics-75765082-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-/* whhatsapp button  */
-/* .float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  transition: all .7s;animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
-}
-
-.float:hover {
-  background-color: #FFF;
-  color: #25d366;
-}
-
-.my-float {
-  margin-top: 6px;
-} */
-
 
 .btn-whatsapp-pulse {
   background: #25d366;

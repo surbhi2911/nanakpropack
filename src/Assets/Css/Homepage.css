@@ -11,10 +11,10 @@
 }
 
 .imageback {
-    background: transparent;
-    box-shadow: 10px 10px 0 black;
+    /* background: transparent; */
+    /* box-shadow: 10px 10px 0 black; */
     padding: 2px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* Home WhyUs Start */
@@ -262,6 +262,8 @@
 
 .product-item:hover .product-item-image-hover {
     opacity: 1;
+    height: 150px;
+    width: 10px;
     visibility: visible;
 }
 
@@ -481,6 +483,13 @@
     border: 3px solid var(--orange--);
 }
 
+.card:hover .footerHandshake {
+    /* box-shadow: rgba(255, 172, 28, 0.199) -10px 10px, rgba(255, 172, 28, 0.19) -20px 20px; */
+    border: 3px solid var(--black--);
+    color: #000;
+    transition: all .8s;
+}
+
 .card .content {
     display: flex;
     flex-direction: column;
@@ -625,76 +634,145 @@
 }
 
 
-/* carousel  */
 
-/* Variables replaced */
-img {
-    max-width: 100%;
-}
 
-.imgshadow {
-    box-shadow: inset 0px 0px 1500px 100px rgba(0, 0, 0, 0.5);
-}
 
-#app {
-    width: 90%;
-    height: 85%;
-    overflow: hidden;
-}
+/* Carousel Start */
 
-.ui-big-images {
-    position: absolute;
-    height: 100%;
+.swiperBg {
+    height: 85vh;
     width: 100%;
-    overflow: hidden;
-    display: flex;
+    background: url('../Images/reviews2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.ui-big-image {
-    width: 100%;
-    margin-right: -100%;
+.bgimgswiper0 {
+    background-image: url('../Images/reviews3.jpg');
+    background-size: contain;
 }
 
-.ui-big-image img {
-    object-fit: cover;
-    object-position: center 20%;
-    width: 100%;
-    height: 100%;
-    display: block;
+.bgimgswiper1 {
+    background-image: url('../Images/reviews4.jpg');
+    background-size: contain;
 }
 
-@media (max-height: 600px) {
-    .ui-big-image img {
-        object-position: center center;
+.bgimgswiper2 {
+    background-image: url('../Images/reviews1.jpg');
+    background-size: contain;
+}
+
+.bgimgswiper3 {
+    background-image: url('../Images/reviews1\ \(1\).png');
+    background-size: contain;
+}
+
+
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
     }
 }
 
-.ui-thumbnails {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 1rem;
-    padding-top: 0.5rem;
-    padding-right: calc(45% + 0.5rem);
+.down-arrow {
+    display: inline-block;
+    animation: upDown 2s infinite;
+
 }
 
-.ui-thumbnail {
-    display: block;
-    margin-right: 0.5rem;
-    padding: 0.5rem 0;
+@keyframes upDown2 {
+
+    0%,
+    100% {
+        transform: translatex(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.down-arrow2 {
+    display: inline-block;
+    animation: upDown2 2s infinite;
+}
+
+.gallery {
+    --s: 150px;
+    --g: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--s), 1fr));
+    gap: var(--g);
+    justify-items: center;
+    margin: calc(var(--s) + var(--g));
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
     cursor: pointer;
+    filter: grayscale(80%);
+    transition: .2s linear;
 }
 
-.ui-cuticle {
-    background-color: #D4A12D;
-    position: absolute;
-    bottom: 0;
-    height: 0.25rem;
-    width: 100%;
+.gallery>img:hover {
+    filter: grayscale(0);
+    z-index: 1;
+    --_t: 1.2;
 }
+
+.gallery>img:first-child {
+    --_y: calc(-100% - var(--g));
+}
+
+.gallery>img:nth-child(7) {
+    --_y: calc(100% + var(--g));
+}
+
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(5) {
+    --_x: calc(-75% - .87 * var(--g));
+}
+
+.gallery>img:nth-child(4),
+.gallery>img:nth-child(6) {
+    --_x: calc(75% + .87 * var(--g));
+}
+
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(4) {
+    --_y: calc(-50% - .5 * var(--g));
+}
+
+.gallery>img:nth-child(5),
+.gallery>img:nth-child(6) {
+    --_y: calc(50% + .5 * var(--g));
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        --s: 100px;
+        --g: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        --s: 80px;
+        --g: 3px;
+    }
+}
+
+
+/* Carousel End */

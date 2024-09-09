@@ -8,16 +8,20 @@ import '../../Assets/Css/Homepage.css'
 // import HomeTeam from './HomeTeam'
 import Hometestimonial from './Hometestimonial'
 import HomeCrousel from './HomeCrousel'
+import FoodPackaging from './HomeTeam'
 
 function Homepage() {
     return (
         <>
-            <HomeCrousel />
-            <HomeAbout />
-            <HomeProduct />
-            <HomeWhyUs />
-            <HomeService />
-            <Hometestimonial />
+            <div className="">
+                <HomeCrousel />
+                <HomeAbout />
+                <HomeProduct />
+                <HomeWhyUs />
+                <HomeService />
+                <Hometestimonial />
+
+            </div>
             {/* <HomeTeam /> */}
         </>
     )

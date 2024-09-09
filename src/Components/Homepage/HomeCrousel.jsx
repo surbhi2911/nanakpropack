@@ -1,57 +1,127 @@
-import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import React from 'react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import Slider from 'react-slick';
+import { FaArrowDownLong } from 'react-icons/fa6';
 
-function HomeCrousel() {
-    const imageStyle = {
-        boxShadow: 'inset 0 0 10px rgba(0, 0, 0, 0.5)' // Inset box shadow
+const data = [
+    {
+        h1: 'WITH CARE',
+        h6: 'How We Can Help '
+    },
+    {
+        h1: 'FAST WORK',
+        h6: 'Our Products & Services'
+    },
+    {
+        h1: 'GREATE QUALITY',
+        h6: 'Why Us'
+    },
+    {
+        h1: 'CLIENT FOCUS',
+        h6: 'Customer Satisfaction'
+    }
+
+]
+
+function App() {
+    var settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        autoplay: true,
+        swipe: true,
+        // speed: 30000000,
+        arrows: false,
+        pauseOnHover: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 766,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
     return (
-        // <img src={require('../../Assets/Images/HomeAbout.jpg')} class="d-block w-100 vh-100" alt="..." />
-        // <img src={require('../../Assets/Images/WhyBack.avif')} class="d-block w-100 vh-100" alt="..." />
-        // {/* <img src={require('../../Assets/Images/testimonialback.avif')} class="d-block w-100 vh-100" alt="..." /> */ }
-        < div style={{
-            position: 'relative', top: '-48px'
-        }
-        }>
-            <Carousel fade indicators={false}>
-                <Carousel.Item className=''>
-                    <img
-                        class="d-block w-100 vh-100 imgshadow"
-                        src="https://trak.in/wp-content/uploads/2016/05/eCommerce-Packaging.jpg"
-                        alt="Innovative Packaging Solutions"
-                    />
-                    <Carousel.Caption>
-                        <h3>Innovative Packaging Solutions</h3>
-                        <p>Protect, Preserve, and Present Your Products with Style</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-
-                <Carousel.Item className=''>
-                    <img
-                        class="d-block w-100 vh-100 imgshadow"
-                        src="https://img.freepik.com/free-photo/still-life-food-delivery_23-2149198164.jpg"
-                        alt="Eco-Friendly Packaging"
-                    />
-                    <Carousel.Caption>
-                        <h3>Eco-Friendly Packaging</h3>
-                        <p>Commit to a Greener Future</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-
-                <Carousel.Item className=''>
-                    <img
-                        src="https://www.arka.com/cdn/shop/files/types-of-packaging-materials.jpg?v=1697192399"
-                        class="d-block w-100 vh-100"
-                        alt="Custom Packaging Tailored to Your Needs"
-                    />
-                    <Carousel.Caption>
-                        <h3>Custom Packaging Tailored to Your Needs</h3>
-                        <p>Stand Out on the Shelves</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </div >
-    )
+        <>
+            <div className="mb-5 overflow-x-hidden">
+                <div className='swiperBg mb-5' style={{ marginTop: '-43px' }}>
+                    <div>
+                        <div className='container text-center'>
+                            <div style={{ padding: '180px 20px 20px 20px' }}>
+                                <h1 className='display-1 fw-bold mb-2' style={{ letterSpacing: '8px' }}>
+                                    <span className='text-light'>Protective</span> <span className='orangecolor bg-light pb-1'>Packaging</span>
+                                </h1>
+                                <p className='text-light fw-semibold' style={{ letterSpacing: '8px' }}>WE BUILD THE BEST</p>
+                                <FaArrowDownLong className='display-6 down-arrow orangecolor' />
+                                <Slider {...settings} className='d-flex align-items-end'>
+                                    {data.map((Item, index) => {
+                                        const [firstWord, secondWord] = Item.h1.split(' ');
+                                        return (
+                                            <div key={index}>
+                                                <div className={`${'bgimgswiper' + index} bg-light text-dark m-4`}>
+                                                    <div>
+                                                        <div className="bg-light mx-4 shadow-lg py-4 pb-5" style={{ position: 'relative', bottom: '-50px' }}>
+                                                            <div className="pb-3" style={{ margin: 'auto' }}>
+                                                                <div style={{ fontSize: '27px' }} className='text-dark fw-bold'>
+                                                                    <span style={{ color: '#333' }}>{firstWord}</span>{' '}
+                                                                    <span className='orangecolor'>{secondWord}</span>
+                                                                </div>
+                                                                <div style={{ fontSize: '20px' }} className='orangecolor fw-light'>{Item.h6}</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </Slider>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
 
-export default HomeCrousel
+export default App;

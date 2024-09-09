@@ -5,10 +5,10 @@ import { HiOutlineBuildingOffice } from 'react-icons/hi2'
 
 function ContactDetails() {
     return (
-        <div className='py-5 black'>
+        <div className='py-5 black overflow-x-hidden'>
             <div className='container'>
                 <div className='row align-items-center justify-content-evenly text-center'>
-                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 py-5 bg-light rounded-0 packaging-border packaging-border-1'>
+                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 py-5 bg-light rounded-0 packaging-border packaging-border-1' data-aos="fade-left" data-aos-duration="2000">
                         <div className="py-2">
                             <FaLeftLong className='fs-2' />
                             <h1>Email</h1>
@@ -20,7 +20,7 @@ function ContactDetails() {
                             </a>
                         </div>
                     </div>
-                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 py-5 bg-light rounded-0 packaging-border packaging-border-2'>
+                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 py-5 bg-light rounded-0 packaging-border packaging-border-2' data-aos="fade-up" data-aos-duration="2000">
                         <div className="mt-4 mb-5">
                             <HiOutlineBuildingOffice className='fs-2' />
                             <h1>Address</h1>
@@ -31,7 +31,7 @@ function ContactDetails() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 mt-1 mb-1 py-5 bg-light rounded-0 packaging-border packaging-border-3'>
+                    <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 mt-1 mb-1 py-5 bg-light rounded-0 packaging-border packaging-border-3' data-aos="fade-right" data-aos-duration="2000">
                         <FaLeftLong className='fs-2' />
                         <h1>Call Us</h1>
                         <p>Call us whenever you need immediate support or have any questions.</p>

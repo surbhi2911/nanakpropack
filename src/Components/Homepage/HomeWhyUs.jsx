@@ -7,7 +7,7 @@ import { TitleHead } from '../TitleHead';
 function HomeWhyUs() {
     return (
         <>
-            <div className='HomeWhyus text-light py-5'>
+            <div className='HomeWhyus text-light py-5 overflow-x-hidden'>
                 <div className='container-lg mt-5'>
                     <div className='row justify-content-lg-center justify-content-start'>
                         <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-duration='1200'>

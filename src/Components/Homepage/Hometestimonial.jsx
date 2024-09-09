@@ -109,10 +109,10 @@ function Hometestimonial() {
     };
     return (
         <>
-            <div className='HomeTest py-5'>
+            <div className='HomeTest py-5 overflow-x-hidden '>
                 <div className='container-lg my-5 pb-5'>
                     <div className='row justify-content-center align-items-center'>
-                        <div className='col-md-6 col-11 px-0 order-md-1 order-2'>
+                        <div className='col-md-6 col-11 px-0 order-md-1 order-2' data-aos="fade-up" data-aos-duration="2000">
                             <div className="h-100" id="footer_slick">
                                 <Slider {...settings} className="p-0 m-0 text-white text-center pt-2 ">
                                     {teamMembers.map((x, i) => {
@@ -135,7 +135,7 @@ function Hometestimonial() {
                         <div className="pt-3 col-md-6 col-11 order-md-2 order-1">
                             <div className="col-12 mx-auto">
                                 <TitleHead text1='Our' text2='Client Said' line1='Satisfied Customers' line2='Are Our Best Ads' />
-                                <p className='text-light py-3 lh-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quo quae repudiandae modi deleniti ex labore vitae consequuntur reprehenderit!</p>
+                                <p className='text-light py-3 lh-lg' data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quo quae repudiandae modi deleniti ex labore vitae consequuntur reprehenderit!</p>
                             </div>
                         </div>
                     </div>
