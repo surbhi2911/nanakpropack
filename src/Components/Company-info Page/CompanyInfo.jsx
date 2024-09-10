@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { Package, Leaf, Recycle, Award, Users, Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Smile, Package, PenTool, Leaf, Recycle, Award, Users, Phone, Mail, MapPin, Clock, Truck, Brush } from 'lucide-react'
 import HOC from '../HOC'
 import '../../Assets/Css/CompanyInfo.css'
 import { TitleHead, TitleHeadLight } from '../TitleHead'
 import AllBtn from '../AllBtn'
 import CountUp from 'react-countup';
 import CompanyInfoHome from './CompanyInfoHome'
+import { Controls, Player } from '@lottiefiles/react-lottie-player'
 
 function CompanyInfo() {
     return (
@@ -19,19 +20,19 @@ function CompanyInfo() {
 
                     <div className="info-grid">
                         <div className="info-card" data-aos="fade-left" data-aos-duration="2000">
-                            <h2><Package size={24} /> Custom Packaging</h2>
+                            <Package className='orangecolor my-2' size={24} /><h2>Custom Packaging</h2>
                             <p>We create tailored packaging solutions that perfectly fit your product needs while minimizing environmental impact.</p>
                         </div>
                         <div className="info-card" data-aos="fade-up" data-aos-duration="2000">
-                            <h2><Leaf size={24} /> Eco-Friendly Materials</h2>
+                            <Leaf className='orangecolor my-2' size={24} /><h2>Eco-Friendly Materials</h2>
                             <p>Our packaging is made from sustainable, biodegradable materials that reduce your carbon footprint.</p>
                         </div>
                         <div className="info-card" data-aos="fade-down" data-aos-duration="2000">
-                            <h2><Recycle size={24} /> Circular Economy</h2>
+                            <Recycle className='orangecolor my-2' size={24} /><h2>Circular Economy</h2>
                             <p>We design our packaging with recyclability in mind, supporting a circular economy and reducing waste.</p>
                         </div>
                         <div className="info-card" data-aos="fade-right" data-aos-duration="2000">
-                            <h2><Award size={24} /> Award-Winning Designs</h2>
+                            <Award className='orangecolor my-2' size={24} /><h2>Award-Winning Designs</h2>
                             <p>Our innovative packaging solutions have won multiple industry awards for sustainability and design excellence.</p>
                         </div>
                     </div>
@@ -42,9 +43,17 @@ function CompanyInfo() {
             <div className="container my-5 overflow-hidden">
                 <section className="productivity-section">
                     <div className="container">
-                        <div className="content row justify-content-center align-items-center">
-                            <div className="image-content text-center col-md-6 col-11">
-                                <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGNsZXY5c2Z4MXNlbzVoN2ZoNW0xeXRtdDdhN3BtOTJrazJ3OGxjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rminyWgjsI69peN5CO/giphy.webp' alt="Team collaborating on a project" className='img-fluid' />
+                        <div className="content row justify-content-center">
+                            <div className="image-content text-center col-md-6 col-11 player">
+                                {/* <img src='https://img.freepik.com/free-photo/medium-shot-young-people-with-reviews_23-2149394417.jpg?w=900&t=st=1725945010~exp=1725945610~hmac=4a31e142e7309b30ed4cec5f2fb83f746d476ca534ee84f1dc30397aa4f464c1' alt="Team collaborating on a project" className='img-fluid' /> */}
+                                <Player
+                                    autoplay
+                                    loop
+                                    src="https://lottie.host/836ff731-3310-4c91-b905-37133e752e0f/v1uFgLSGGB.json"
+                                    className='col-12 h-100 p-0 m-0 pt-5 mt-5'
+                                >
+                                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                                </Player>
                             </div>
                             <div className="text-content mx-auto col-md-6 col-11">
                                 <div className="pb-5">
@@ -74,34 +83,65 @@ function CompanyInfo() {
 
             <div className='happyclients py-5 overflow-hidden'>
                 <div className="container">
-
+                    <div className="Metrics">
+                        <h1 className='text-light text-center '>Our Achievements in Numbers</h1>
+                    </div>
                     <div className="row justify-content-center">
-                        <div className="stat-item col-3 text-center m-3 paper-box shadow-lg" data-aos="fade-left" data-aos-duration="2000">
-                            <div className="stat-icon"><Users size={32} /></div>
-                            <div className="stat-number text-light">
-                                <CountUp
-                                    start={0}
-                                    end={500}
-                                    duration={2.75}
-                                    enableScrollSpy={true}
-                                >
-                                    500+
-                                </CountUp></div>
-                            <div className="stat-label  text-light">Happy Clients</div>
-                        </div>
-                        <div className="stat-item col-3 text-center m-3 paper-box" data-aos="fade-right" data-aos-duration="2000">
-                            <div className="stat-icon"><Package size={32} /></div>
-                            <div className="stat-number text-light">
-                                <CountUp
-                                    start={0}
-                                    end={1000}
-                                    duration={2.75}
-                                    enableScrollSpy={true}
-                                >
-                                    1000
-                                </CountUp>
+                        <div className="col-lg-3 col-md-6 col-sm-9 col-11 mt-lg-0 mt-5 text-center mx-auto">
+                            <div className="stat-item col-10 text-center paper-box shadow-lg" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="stat-icon"><Smile size={32} /></div>
+                                <div className="stat-number text-light">
+                                    <CountUp
+                                        start={0}
+                                        end={500}
+                                        duration={2.75}
+                                        enableScrollSpy={true}
+                                    />+
+                                </div>
+                                <div className="stat-label  text-light">Happy Clients</div>
                             </div>
-                            <div className="stat-label text-light">Packages Delivered</div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-9 col-11 mt-lg-0 mt-5 text-center mx-auto">
+                            <div className="stat-item col-10 text-center paper-box shadow-lg" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="stat-icon"><Truck size={32} /></div>
+                                <div className="stat-number text-light">
+                                    <CountUp
+                                        start={0}
+                                        end={1000}
+                                        duration={2.75}
+                                        enableScrollSpy={true}
+                                    />+
+                                </div>
+                                <div className="stat-label text-light">Packages Delivered</div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-9 col-11 mt-lg-0 mt-5 text-center mx-auto">
+                            <div className="stat-item col-10 text-center paper-box shadow-lg" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="stat-icon"><Recycle size={32} /></div>
+                                <div className="stat-number text-light">
+                                    <CountUp
+                                        start={0}
+                                        end={95}
+                                        duration={2.75}
+                                        enableScrollSpy={true}
+                                    />
+                                    %</div>
+                                <div className="stat-label  text-light">Eco-Friendly Products</div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-9 col-11 mt-lg-0 mt-5 text-center mx-auto">
+                            <div className="stat-item col-10 text-center paper-box shadow-lg" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="stat-icon"><Brush size={32} /></div>
+                                <div className="stat-number text-light">
+                                    +<CountUp
+                                        start={0}
+                                        end={10000}
+                                        duration={2.75}
+                                        enableScrollSpy={true}
+                                    />
+                                </div>
+                                <div className="stat-label  text-light">Custom Designs Created</div>
+                            </div>
                         </div>
 
                     </div>

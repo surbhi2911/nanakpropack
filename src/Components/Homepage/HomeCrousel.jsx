@@ -83,7 +83,7 @@ function App() {
     };
     return (
         <>
-            <div className="mb-5 overflow-x-hidden">
+            <div className="mb-5">
                 <div className='swiperBg mb-5' style={{ marginTop: '-43px' }}>
                     <div>
                         <div className='container text-center'>

@@ -6,12 +6,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { FaAddressBook, FaBars, FaMailBulk, FaPhone, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
+import { FaAddressBook, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 import { MdQrCodeScanner } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { Modal } from '@mui/material';
 import { QRCodeCanvas } from 'qrcode.react';
 import { TitleHeadLight } from './TitleHead';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 const pages = [
     {
         page: 'Home',
@@ -80,19 +81,52 @@ function Header() {
         <>
             {/* TOP-LINE Start */}
             <div className='text-light d-lg-block d-none pb-5 pt-3 headerNana'>
-                <div className='d-lg-flex align-items-center justify-content-evenly'>
-                    <div className='mx-5'>
-                        <FaMailBulk className='mx-2' />
-                        abc@gmail.com
+                {/* <div className="container">
+                    <div className='d-lg-flex align-items-center justify-content-evenly'>
+                        <div className='mx-5'>
+                            <FaMailBulk className='mx-2' />
+                            abc@gmail.com
+                        </div>
+                        <div className='mx-5 fs-5 text-end'>
+                            <a href="InstagramLink">
+                                <Instagram className='mx-2 text-dark' />
+                            </a>
+                            <a href="InstagramLink">
+                                <Twitter className='mx-2 text-dark' />
+                            </a>
+                            <a href="InstagramLink">
+                                <Facebook className='mx-2 text-dark' />
+                            </a>
+                        </div>
+                        <div className='mx-5'>
+                            <FaAddressBook className='mx-2' />
+                            123,sdfd,fsdf..
+                        </div>
                     </div>
-                    <div className='mx-5'>
-                        <FaAddressBook className='mx-2' />
-                        123,sdfd,fsdf..
-                    </div>
-                    <div className='mx-5'>
-                        <FaPhone className='mx-2' />
-                        +91 9887795578
-                    </div>
+                </div> */}
+                <div id="topbar" class="col-lg-12" >
+                    <span id="topbarin">
+                        <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                            #34-strreet A Newyork Lorem ipsum dolor sit amet.
+                        </span>
+                        <span class="topbarcontent">
+                            +91 70483 13227
+                        </span>
+                    </span>
+                    <span id="topbarin1">
+                        <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                            <FaFacebook />
+                        </span>
+                        <span class="topbarcontent">
+                            <FaInstagram />
+                        </span>
+                        <span class="topbarcontent">
+                            <FaTwitter />
+                        </span>
+                        <span class="topbarcontent">
+                            <FaLinkedin />
+                        </span>
+                    </span>
                 </div>
             </div>
             {/* TOP-LINE End */}
@@ -166,16 +200,16 @@ function Header() {
                             </Typography>
                             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                                 {pages.map((page) => (
-                                    <Button
-                                        key={page}
-                                        onClick={handleClose}
-                                        sx={{ my: 2, color: 'white', display: 'block' }}
-                                        className='px-3 mx-2 text-nowrap fw-semibold text-center button'
-                                    >
-                                        <Link to={page.link} className='text-decoration-none text-dark'>
+                                    <Link to={page.link} className='text-decoration-none text-dark'>
+                                        <Button
+                                            key={page}
+                                            onClick={handleClose}
+                                            sx={{ my: 2, color: 'white', display: 'block' }}
+                                            className='px-3 mx-2 text-nowrap fw-semibold text-center button'
+                                        >
                                             {page.page}
-                                        </Link>
-                                    </Button>
+                                        </Button>
+                                    </Link>
                                 ))}
                             </Box>
                             <Box sx={{ flexGrow: 0 }}>

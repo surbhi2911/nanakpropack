@@ -14,7 +14,7 @@ function HomeProduct() {
         initialSlide: 0,
         autoplay: true,
         swipe: true,
-        // speed: 30000000,
+        speed: 30000000,
         arrows: false,
         pauseOnHover: false,
         dots: false,
@@ -70,8 +70,8 @@ function HomeProduct() {
                     </div>
                     <Slider {...settings} className='p-0 m-0'>
                         {ProductList.map((Item, index) => (
-                            <div className="product-box" key={index} data-aos='fade' data-aos-duration='1200' data-aos-delay='1000'>
-                                <div className="product-item mx-3 text-decoration-none">
+                            <div className="product-box" key={index} data-aos='' data-aos-duration='1200' data-aos-delay='1000'>
+                                <div className="product-item mx-3 text-decoration-none ">
                                     <div className="product-item-image">
                                         <img src={Item.img} alt={`Product`} style={{ height: '120px', width: "120px", objectFit: 'fill', margin: 'auto' }} />
                                         {/* <div className="product-item-image-hover"></div> */}

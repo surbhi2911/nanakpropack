@@ -12,13 +12,13 @@ function HomeAbout() {
                             {/* <img src={require('../../Assets/Images/HomeAbout.jpg')} alt=""
                                 className='img-fluid imageback' /> */}
                             <div class="gallery imageback">
-                                <img src="https://picsum.photos/id/1040/200/200" alt="a house on a mountain" />
-                                <img src="https://picsum.photos/id/106/200/200" alt="sime pink flowers" />
-                                <img src="https://picsum.photos/id/136/200/200" alt="big rocks with some trees" />
-                                <img src="https://picsum.photos/id/1039/200/200" alt="a waterfall, a lot of tree andgreat view from the sky" />
-                                <img src="https://picsum.photos/id/110/200/200" alt="a cool landscape" />
-                                <img src="https://picsum.photos/id/1047/200/200" alt="inside a town between twobuildings" />
-                                <img src="https://picsum.photos/id/1057/200/200" alt="a great view of the sea abovemountain" />
+                                <img src={require('../../Assets/Images/box images/attachment_100298252 (1).jpg')} alt="a house on a mountain" />
+                                <img src={require('../../Assets/Images/box images/attachment_50162265.jpg')} alt="sime pink flowers" />
+                                <img src={require('../../Assets/Images/box images/cable-wire-packaging.jpg')} alt="big rocks with some trees" />
+                                <img src={require('../../Assets/Images/mainImage/Boxes-and-Paper-Bags-600x600-px-Top-and-Bottom-Box.jpg')} alt="a waterfall, a lot of tree andgreat view from the sky" />
+                                <img src={require('../../Assets/Images/mainImage/Free-Craft-Packaging-Shoe-Box-Mockup-Design.jpg')} alt="a cool landscape" />
+                                <img src={require('../../Assets/Images/mainImage/top-bottom-packaging-box.jpg')} alt="inside a town between twobuildings" />
+                                <img src={require('../../Assets/Images/mainImage/b5c3d093c5ee9620c55d2a7c8ebbfa69.jpg')} alt="a great view of the sea abovemountain" />
                             </div>
                         </div>
                     </div>
