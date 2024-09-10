@@ -1,4 +1,3 @@
-
 :root {
   --orange--: #fb9504;
   --blackgray--: #fff;
@@ -368,6 +367,10 @@ input[type="checkbox"]:checked~.menu nav a:nth-child(8) {
 
 .HeaderAppbar {
   margin-top: -40px !important;
+}
+
+.HeaderAppbar .css-1x7skt0 {
+  background: white;
 }
 
 @media screen and (max-width:996px) {
