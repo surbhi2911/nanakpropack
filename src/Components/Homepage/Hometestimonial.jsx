@@ -141,8 +141,6 @@ function Hometestimonial() {
                     </div>
                 </div>
             </div>
-
-
         </>
     );
 }
