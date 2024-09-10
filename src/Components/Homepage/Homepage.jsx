@@ -9,19 +9,18 @@ import '../../Assets/Css/Homepage.css'
 import Hometestimonial from './Hometestimonial'
 import HomeCrousel from './HomeCrousel'
 import FoodPackaging from './HomeTeam'
+import HomeContact from './HomeContact'
 
 function Homepage() {
     return (
         <>
-            <div className="">
-                <HomeCrousel />
-                <HomeAbout />
-                <HomeProduct />
-                <HomeWhyUs />
-                <HomeService />
-                <Hometestimonial />
-
-            </div>
+            <HomeCrousel />
+            <HomeAbout />
+            <HomeProduct />
+            <HomeWhyUs />
+            <HomeService />
+            <Hometestimonial />
+            <HomeContact />
             {/* <HomeTeam /> */}
         </>
     )

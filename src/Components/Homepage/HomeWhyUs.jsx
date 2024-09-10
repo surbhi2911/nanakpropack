@@ -1,41 +1,41 @@
-import React from 'react'
-import { AiOutlineTool } from 'react-icons/ai';
-import { FaShieldAlt } from 'react-icons/fa';
-import { GiRecycle } from 'react-icons/gi';
-import { TitleHead } from '../TitleHead';
+    import React from 'react'
+    import { AiOutlineTool } from 'react-icons/ai';
+    import { FaShieldAlt } from 'react-icons/fa';
+    import { GiRecycle } from 'react-icons/gi';
+    import { TitleHead } from '../TitleHead';
 
-function HomeWhyUs() {
-    return (
-        <>
-            <div className='HomeWhyus text-light py-5 overflow-x-hidden'>
-                <div className='container-lg mt-5'>
-                    <div className='row justify-content-lg-center justify-content-start'>
-                        <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-duration='1200'>
-                            <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />
-                        </div>
-                        <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-delay='200' data-aos-duration='1200'>
-                            <p className='fs-6 my-3 span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias labore repellendus, qui porro illo sint in ratione assumenda quidem.</p>
-                        </div>
-                        <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-right' data-aos-delay='300' data-aos-duration='1200'>
-                            <FaShieldAlt className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'>Durable <span className='fw-bold'>Materials</span></h2>
-                            <p className='my-2'> Our packaging is crafted from high-quality materials for maximum strength and durability.</p>
-                        </div>
-                        <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-up' data-aos-delay='400' data-aos-duration='1200'>
-                            <AiOutlineTool className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'>Custom <span className='fw-bold'>Solutions</span></h2>
-                            <p className='my-2'> We provide tailored packaging designs to perfectly meet your unique business needs.</p>
-                        </div>
-                        <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-left' data-aos-delay='500' data-aos-duration='1200'>
-                            <GiRecycle className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'><span className='fw-bold'>Eco-Friendly</span> Options</h2>
-                            <p className='my-2'>Our sustainable packaging solutions help reduce your environmental footprint effectively.</p>
+    function HomeWhyUs() {
+        return (
+            <>
+                <div className='HomeWhyus text-light py-5'>
+                    <div className='container-lg mt-5'>
+                        <div className='row justify-content-lg-center justify-content-start'>
+                            <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-duration='1200'>
+                                <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />
+                            </div>
+                            <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-delay='200' data-aos-duration='1200'>
+                                <p className='fs-6 my-3 span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias labore repellendus, qui porro illo sint in ratione assumenda quidem.</p>
+                            </div>
+                            <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-right' data-aos-delay='300' data-aos-duration='1200'>
+                                <FaShieldAlt className='fw-light display-4 my-2' />
+                                <h2 className='fw-light fs-4 my-2'>Durable <span className='fw-bold'>Materials</span></h2>
+                                <p className='my-2'> Our packaging is crafted from high-quality materials for maximum strength and durability.</p>
+                            </div>
+                            <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-up' data-aos-delay='400' data-aos-duration='1200'>
+                                <AiOutlineTool className='fw-light display-4 my-2' />
+                                <h2 className='fw-light fs-4 my-2'>Custom <span className='fw-bold'>Solutions</span></h2>
+                                <p className='my-2'> We provide tailored packaging designs to perfectly meet your unique business needs.</p>
+                            </div>
+                            <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-left' data-aos-delay='500' data-aos-duration='1200'>
+                                <GiRecycle className='fw-light display-4 my-2' />
+                                <h2 className='fw-light fs-4 my-2'><span className='fw-bold'>Eco-Friendly</span> Options</h2>
+                                <p className='my-2'>Our sustainable packaging solutions help reduce your environmental footprint effectively.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
-    );
-}
+            </>
+        );
+    }
 
-export default HomeWhyUs
+    export default HomeWhyUs

@@ -299,3 +299,14 @@
     color: #333;
     line-height: 1.6;
 }
+
+.clickHover {
+    transition: all .7s;
+}
+
+.clickHover:hover {
+    /* color: var(--black--); */
+    border-color: var(--orange--) !important;
+    font-size: 20px !important;
+    border-radius: 0px !important;
+}

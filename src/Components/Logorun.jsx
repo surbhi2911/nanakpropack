@@ -90,9 +90,6 @@ function Logorun() {
                                                     />
                                                 </div>
                                             </div>
-
-
-
                                         </>
                                     );
                                 })}

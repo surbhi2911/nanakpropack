@@ -25,12 +25,12 @@ function Portfolio() {
       <div className="container-lg my-5">
 
         <Box>
-          <ImageList variant="masonry" cols={cols} gap={20} className='overflow-hidden'>
+          <ImageList variant="masonry" cols={cols} className='overflow-hidden'>
             {ProductList.map((item, index) => (
               <ImageListItem
                 key={item.id}
                 data-aos='fade-up' data-aos-duration='1200'
-                className={`image-item item${index} paper-box border border-5 border-dark border-top-5 border-bottom-0 border-start-0 border-end-0`}
+                className={`image-item item${index} paper-box border border-5 mx-2 border-dark border-top-5 border-bottom-0 border-start-0 border-end-0`}
               >
                 <Link to={`/portfolio/${item.id}`} className='text-decoration-none text-light text-center'> {/* Link to product details */}
                   <div className="image-container">
@@ -42,7 +42,7 @@ function Portfolio() {
                       className="image"
                     />
                     <div className="overlay">
-                      <div className="text fs-4 border border-5  m-4 px-4 py-3">
+                      <div className="text fs-4 border border-5 rounded-5 m-4 px-4 py-3 clickHover">
                         Click Here
                       </div>
                     </div>

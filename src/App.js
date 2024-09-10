@@ -11,6 +11,7 @@ import Portfolio from './Components/PortfolioPage/Portfolio';
 import Product from './Components/ProductPage/Product';
 import CompanyInfo from './Components/Company-info Page/CompanyInfo';
 import PortfolioDetails from './Components/PortfolioPage/PortfolioDetails';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/Product' element={<Product />} />
