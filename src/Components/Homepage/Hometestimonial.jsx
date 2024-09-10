@@ -109,7 +109,7 @@ function Hometestimonial() {
     };
     return (
         <>
-            <div className='HomeTest py-5 overflow-x-hidden '>
+            <div className='HomeTest py-5 overflow-x-hidden'>
                 <div className='container-lg my-5 pb-5'>
                     <div className='row justify-content-center align-items-center'>
                         <div className='col-md-6 col-11 px-0 order-md-1 order-2' data-aos="fade-up" data-aos-duration="2000">

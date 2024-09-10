@@ -14,14 +14,16 @@ import HomeContact from './HomeContact'
 function Homepage() {
     return (
         <>
-            <HomeCrousel />
-            <HomeAbout />
-            <HomeProduct />
-            <HomeWhyUs />
-            <HomeService />
-            <Hometestimonial />
-            <HomeContact />
-            {/* <HomeTeam /> */}
+            <div className="overflow-x-hidden">
+                <HomeCrousel />
+                <HomeAbout />
+                <HomeProduct />
+                <HomeWhyUs />
+                <HomeService />
+                <Hometestimonial />
+                <HomeContact />
+                {/* <HomeTeam /> */}
+            </div>
         </>
     )
 }
