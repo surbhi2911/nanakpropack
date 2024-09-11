@@ -17,32 +17,6 @@
     border-color: #ffc107;
 
 }
-/* 
-
-#departmenttabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: black !important;
-    background-color: var(--orange--) !important;
-}
-
-#departmenttabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-    background: var(--black--) !important;
-    margin: 10px !important;
-    color: white !important;
-    transition: all .7s !important;
-}
-
-#departmenttabs .css-1aquho2-MuiTabs-indicator {
-    background: none !important;
-}
-
-#departmenttabs .css-8je8zh-MuiTouchRipple-root {
-    display: none !important;
-}
-
-.css-heg063-MuiTabs-flexContainer {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-} */
 
 .bg_black {
     background: var(--black--);

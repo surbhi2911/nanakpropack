@@ -13,7 +13,7 @@ import HomeContact from './HomeContact'
 function Homepage() {
     return (
         <>
-            <div className="overflow-x-hidden">
+            <div className="overflow-x-hidden" style={{ marginTop: '-43px' }}>
                 <HomeCrousel />
                 <HomeAbout />
                 <HomeProduct />

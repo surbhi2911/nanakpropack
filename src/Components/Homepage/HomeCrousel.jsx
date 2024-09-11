@@ -84,7 +84,7 @@ function App() {
     return (
         <>
             <div className="mb-5">
-                <div className='swiperBg mb-5' style={{ marginTop: '-43px' }}>
+                <div className='swiperBg mb-5'>
                     <div>
                         <div className='container text-center'>
                             <div style={{ padding: '180px 20px 20px 20px' }}>
