@@ -21,14 +21,14 @@
 
 #departmenttabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: black !important;
-    background-color: var(--orange--);
+    background-color: var(--orange--) !important;
 }
 
 #departmenttabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-    background: var(--black--);
-    margin: 10px;
-    color: white;
-    transition: all .7s;
+    background: var(--black--) !important;
+    margin: 10px !important;
+    color: white !important;
+    transition: all .7s !important;
 }
 
 #departmenttabs .css-1aquho2-MuiTabs-indicator {
@@ -36,7 +36,7 @@
 }
 
 #departmenttabs .css-8je8zh-MuiTouchRipple-root {
-    display: none;
+    display: none !important;
 }
 
 .css-heg063-MuiTabs-flexContainer {

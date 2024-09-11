@@ -45,7 +45,7 @@ function Product() {
                                 key={department.id}
                                 value={department.id}
                                 label={department.title}
-                                className='bg-danger'
+                                // className='bg-danger'
                             />
                         ))}
                     </Tabs>
