@@ -17,7 +17,6 @@ function HomeProduct() {
         speed: 30000000,
         arrows: false,
         pauseOnHover: false,
-        dots: false,
         responsive: [
             {
                 breakpoint: 1400,
