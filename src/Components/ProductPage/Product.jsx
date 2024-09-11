@@ -51,7 +51,7 @@ function Product() {
                                 transition: 'all 0.7s',
                             },
                             '& .Mui-selected': {
-                                color: 'black',
+                                color: 'black !important',
                                 backgroundColor: 'var(--orange--)',
                             },
                             '& .MuiTabs-indicator': {
