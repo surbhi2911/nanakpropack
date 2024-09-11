@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import AllBtn from "../AllBtn";
 import { FaBoxOpen, FaRecycle, FaShieldAlt, FaChartLine, FaLightbulb, FaTruck } from 'react-icons/fa';
 import { TitleHeadLight } from "../TitleHead";
 
@@ -82,9 +81,6 @@ function HomeService() {
                                                     <Card.Text className="text-muted fw-semibold">{service.description}</Card.Text>
 
                                                 </Card.Body>
-                                                {/* <a href="/PortFolio">
-                                                    <AllBtn text='More About Us' />
-                                                </a> */}
                                             </Card>
                                         </Col>
                                     ))}

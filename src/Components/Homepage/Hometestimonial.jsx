@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Slider from 'react-slick';
-import { TitleHead, TitleHeadLight } from '../TitleHead';
-import { Link } from 'react-router-dom';
+import { TitleHead } from '../TitleHead';
 
 const teamMembers = [
     {
@@ -103,7 +102,7 @@ function Hometestimonial() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000, // Adjust the speed as needed
+        autoplaySpeed: 4000,
         pauseOnHover: true,
 
     };

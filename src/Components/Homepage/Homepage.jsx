@@ -8,7 +8,6 @@ import '../../Assets/Css/Homepage.css'
 // import HomeTeam from './HomeTeam'
 import Hometestimonial from './Hometestimonial'
 import HomeCrousel from './HomeCrousel'
-import FoodPackaging from './HomeTeam'
 import HomeContact from './HomeContact'
 
 function Homepage() {

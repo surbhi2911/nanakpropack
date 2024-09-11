@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { AiOutlineTool } from 'react-icons/ai';
 import { FaShieldAlt } from 'react-icons/fa';
 import { GiRecycle } from 'react-icons/gi';

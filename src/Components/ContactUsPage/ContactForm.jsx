@@ -3,7 +3,6 @@ import { IoMdMail } from "react-icons/io";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { TitleHeadLight } from "../TitleHead";
-import { Button, Typography } from '@mui/material';
 import AllBtn from "../AllBtn";
 const data = [
     {

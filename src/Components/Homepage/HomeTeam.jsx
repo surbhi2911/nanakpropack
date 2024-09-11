@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
-import { TitleHead, TitleHeadLight } from '../TitleHead';
+import { TitleHeadLight } from '../TitleHead';
 
 const teamMembers = [
     {

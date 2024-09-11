@@ -9,8 +9,6 @@ function HomeAbout() {
                 <div className='row justify-content-center align-items-center'>
                     <div className='col-lg-6 col-11 px-0 down-arrow2' data-aos='fade' data-aos-duration='1000' >
                         <div className="mx-auto mb-md-0 mb-sm-5 mb-0 h-100">
-                            {/* <img src={require('../../Assets/Images/HomeAbout.jpg')} alt=""
-                                className='img-fluid imageback' /> */}
                             <div class="gallery imageback">
                                 <img src={require('../../Assets/Images/box images/attachment_100298252 (1).jpg')} alt="a house on a mountain" />
                                 <img src={require('../../Assets/Images/box images/attachment_50162265.jpg')} alt="sime pink flowers" />

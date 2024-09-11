@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { Smile, Package, PenTool, Leaf, Recycle, Award, Users, Phone, Mail, MapPin, Clock, Truck, Brush } from 'lucide-react'
+import React from 'react'
+import { Smile, Package, Leaf, Recycle, Award, Phone, Mail, MapPin, Clock, Truck, Brush } from 'lucide-react'
 import HOC from '../HOC'
 import '../../Assets/Css/CompanyInfo.css'
-import { TitleHead, TitleHeadLight } from '../TitleHead'
+import { TitleHeadLight } from '../TitleHead'
 import AllBtn from '../AllBtn'
-import CountUp from 'react-countup';
+import CountUp from 'react-countup'
 import CompanyInfoHome from './CompanyInfoHome'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 

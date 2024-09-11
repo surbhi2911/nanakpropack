@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../Assets/Css/Product.css';
 import HOC from '../HOC';
-import { TitleHead, TitleHeadLight } from '../TitleHead';
+import { TitleHead } from '../TitleHead';
 import { Tabs, Tab, Box } from '@mui/material';
 import { departments } from './departments';
 import AllBtn from '../AllBtn';
@@ -81,7 +81,7 @@ function Product() {
                                                     <TitleHead text2={item.MainName} />
                                                 </div>
                                                 <p className='text-light' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
-                                                <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank'>
+                                                <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer"ss>
                                                     <AllBtn text='Get Quote' data-aos="fade-left" data-aos-duration="2000" />
                                                     <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>whats'app your custom packaging now!</p>
                                                 </a>

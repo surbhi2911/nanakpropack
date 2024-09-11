@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaLeftLong } from 'react-icons/fa6'
-import AllBtn from '../AllBtn'
 import { HiOutlineBuildingOffice } from 'react-icons/hi2'
 
 function ContactDetails() {

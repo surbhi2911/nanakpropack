@@ -6,13 +6,12 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { FaAddressBook, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
+import { FaBars, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import { MdQrCodeScanner } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { Modal } from '@mui/material';
 import { QRCodeCanvas } from 'qrcode.react';
 import { TitleHeadLight } from './TitleHead';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
 const pages = [
     {
         page: 'Home',
@@ -79,31 +78,8 @@ function Header() {
 
     return (
         <>
-            {/* TOP-LINE Start */}
             <div className='text-light d-lg-block d-none pb-5 pt-3 headerNana'>
-                {/* <div className="container">
-                    <div className='d-lg-flex align-items-center justify-content-evenly'>
-                        <div className='mx-5'>
-                            <FaMailBulk className='mx-2' />
-                            abc@gmail.com
-                        </div>
-                        <div className='mx-5 fs-5 text-end'>
-                            <a href="InstagramLink">
-                                <Instagram className='mx-2 text-dark' />
-                            </a>
-                            <a href="InstagramLink">
-                                <Twitter className='mx-2 text-dark' />
-                            </a>
-                            <a href="InstagramLink">
-                                <Facebook className='mx-2 text-dark' />
-                            </a>
-                        </div>
-                        <div className='mx-5'>
-                            <FaAddressBook className='mx-2' />
-                            123,sdfd,fsdf..
-                        </div>
-                    </div>
-                </div> */}
+                
                 <div id="topbar" class="col-lg-12" >
                     <span id="topbarin">
                         <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
