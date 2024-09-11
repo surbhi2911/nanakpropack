@@ -38,14 +38,35 @@ function Product() {
                         variant="scrollable"
                         id="departmenttabs"
                         scrollButtons="auto"
-                        sx={{ mb: 4 }}
+                        sx={{
+                            mb: 4,
+                            '& .MuiTabs-flexContainer': {
+                                flexWrap: 'wrap',
+                                justifyContent: 'center',
+                            },
+                            '& .MuiTab-root': {
+                                backgroundColor: 'var(--black--)',
+                                color: 'white',
+                                margin: '10px',
+                                transition: 'all 0.7s',
+                            },
+                            '& .Mui-selected': {
+                                color: 'black',
+                                backgroundColor: 'var(--orange--)',
+                            },
+                            '& .MuiTabs-indicator': {
+                                display: 'none',
+                            },
+                            '& .MuiTouchRipple-root': {
+                                display: 'none',
+                            },
+                        }}
                     >
                         {departments.map((department) => (
                             <Tab
                                 key={department.id}
                                 value={department.id}
                                 label={department.title}
-                                // className='bg-danger'
                             />
                         ))}
                     </Tabs>
@@ -82,7 +103,7 @@ function Product() {
                                                     <TitleHead text2={item.MainName} />
                                                 </div>
                                                 <p className='text-light' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
-                                                <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer"ss>
+                                                <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer" ss>
                                                     <AllBtn text='Get Quote' data-aos="fade-left" data-aos-duration="2000" />
                                                     <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>whats'app your custom packaging now!</p>
                                                 </a>

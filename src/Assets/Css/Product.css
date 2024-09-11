@@ -17,7 +17,7 @@
     border-color: #ffc107;
 
 }
-
+/* 
 
 #departmenttabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: black !important;
@@ -42,7 +42,7 @@
 .css-heg063-MuiTabs-flexContainer {
     flex-wrap: wrap !important;
     justify-content: center !important;
-}
+} */
 
 .bg_black {
     background: var(--black--);
