@@ -1,13 +1,14 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { TitleHead } from '../TitleHead';
+import { MessageSquareQuote, Quote } from 'lucide-react';
+import { MdFormatQuote } from 'react-icons/md';
 
 const teamMembers = [
     {
         name: "Vin Diesel",
-        message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
-        position: "Senior App Developer",
-        src: "https://1.bp.blogspot.com/-AO5j2Y9lzME/YLjr3mxiqAI/AAAAAAAACPE/KAaYYTtQTrgBE3diTbxGoc4U4fCGx-C2gCNcBGAsYHQ/s16000/team-1-4.jpg",
+        message: 'The packaging exceeded our expectations in durability and design. Truly impressed with their attention to detail.',
+        position: "Outstanding Quality!",
         social: {
             facebook: "#",
             instagram: "#",
@@ -16,9 +17,8 @@ const teamMembers = [
     },
     {
         name: "John Doe",
-        message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
-        position: "Project Manager",
-        src: "https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg",
+        message: 'Their team was responsive and professional, delivering exactly what we needed, on time and within budget.',
+        position: "Exceptional Service!",
         social: {
             facebook: "#",
             instagram: "#",
@@ -27,9 +27,8 @@ const teamMembers = [
     },
     {
         name: "Jane Smith",
-        message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
-        position: "UI/UX Designer",
-        src: "https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg",
+        message: 'Their custom solutions helped us enhance our brand’s image. We couldn’t be happier with the results.',
+        position: "Highly Recommended!",
         social: {
             facebook: "#",
             instagram: "#",
@@ -38,8 +37,8 @@ const teamMembers = [
     },
     {
         name: "Vin Diesel",
-        message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
-        position: "Senior App Developer",
+        message: 'We appreciate their commitment to sustainability without compromising on quality. A trusted partner for our packaging needs.',
+        position: "Eco-Friendly and Effective!",
         src: "https://1.bp.blogspot.com/-AO5j2Y9lzME/YLjr3mxiqAI/AAAAAAAACPE/KAaYYTtQTrgBE3diTbxGoc4U4fCGx-C2gCNcBGAsYHQ/s16000/team-1-4.jpg",
         social: {
             facebook: "#",
@@ -62,7 +61,6 @@ const teamMembers = [
         name: "Jane Smith",
         position: "UI/UX Designer",
         message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
-        src: "https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg",
         social: {
             facebook: "#",
             instagram: "#",
@@ -84,7 +82,6 @@ const teamMembers = [
         name: "Jane Smith",
         message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur est quis molestias ducimus enim porro corrupti iusto dolores distinctio!',
         position: "UI/UX Designer",
-        src: "https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg",
         social: {
             facebook: "#",
             instagram: "#",
@@ -119,9 +116,9 @@ function Hometestimonial() {
                                             <>
                                                 <div className='slickback p-5'>
                                                     <div>
-                                                        <h4>{x.name}</h4>
-                                                        <p>{x.position}</p>
-                                                        <div>{x.message}</div>
+                                                        <div className='my-2' style={{ textAlign: 'justify' }}><MdFormatQuote className='orangecolor fs-3' /> {x.message} <MdFormatQuote className='orangecolor fs-3' /> </div>
+                                                        <h4 className='text-end my-2'>— {x.name} </h4>
+                                                        <p className='text-end text-light my-2'>{x.position}</p>
                                                     </div>
                                                 </div>
                                             </>
@@ -134,7 +131,7 @@ function Hometestimonial() {
                         <div className="pt-3 col-md-6 col-11 order-md-2 order-1">
                             <div className="col-12 mx-auto">
                                 <TitleHead text1='Our' text2='Client Said' line1='Satisfied Customers' line2='Are Our Best Ads' />
-                                <p className='text-light py-3 lh-lg' data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis quo quae repudiandae modi deleniti ex labore vitae consequuntur reprehenderit!</p>
+                                <p className='text-light py-3 lh-lg' data-aos="fade-left" data-aos-duration="2000">Discover why our clients love us—read their stories of satisfaction, quality, and exceptional service.</p>
                             </div>
                         </div>
                     </div>

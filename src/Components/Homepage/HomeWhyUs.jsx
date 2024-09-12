@@ -14,21 +14,21 @@ function HomeWhyUs() {
                             <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />
                         </div>
                         <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-delay='200' data-aos-duration='1200'>
-                            <p className='fs-6 my-3 span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias labore repellendus, qui porro illo sint in ratione assumenda quidem.</p>
+                            <p className='fs-6 my-3 span lh-lg'>Choose NANAKPROPACK, for packaging that protects, promotes, and elevates your products.</p>
                         </div>
                         <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-right' data-aos-delay='300' data-aos-duration='1200'>
                             <FaShieldAlt className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'>Durable <span className='fw-bold'>Materials</span></h2>
+                            <h2 className='fw-light fs-4 my-2 orangecolor'>Durable <span className='fw-bold'>Materials</span></h2>
                             <p className='my-2'> Our packaging is crafted from high-quality materials for maximum strength and durability.</p>
                         </div>
                         <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-up' data-aos-delay='400' data-aos-duration='1200'>
                             <AiOutlineTool className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'>Custom <span className='fw-bold'>Solutions</span></h2>
+                            <h2 className='fw-light fs-4 my-2 orangecolor'>Custom <span className='fw-bold'>Solutions</span></h2>
                             <p className='my-2'> We provide tailored packaging designs to perfectly meet your unique business needs.</p>
                         </div>
                         <div className='col-lg-4 col-11 py-lg-5 py-2 my-md-2 my-1' data-aos='fade-left' data-aos-delay='500' data-aos-duration='1200'>
                             <GiRecycle className='fw-light display-4 my-2' />
-                            <h2 className='fw-light fs-4 my-2'><span className='fw-bold'>Eco-Friendly</span> Options</h2>
+                            <h2 className='fw-light fs-4 my-2 orangecolor'><span className='fw-bold'>Eco-Friendly</span> Options</h2>
                             <p className='my-2'>Our sustainable packaging solutions help reduce your environmental footprint effectively.</p>
                         </div>
                     </div>

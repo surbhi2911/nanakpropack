@@ -18,7 +18,7 @@ function Footer() {
                             <h2>
                                 <FaHandshake className='display-3 rounded-circle p-2 footerHandshake' />
                             </h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quaerat molestiae minus nisi quae sit pariatur neque atque natus dolore.</p>
+                            <p>Providing innovative and sustainable packaging solutions. Contact us today to elevate your brand with quality packaging.</p>
                         </div>
                         <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10 ps-md-5' data-aos="fade" data-aos-duration="2000">
                             <h3 className='orangecolor'>

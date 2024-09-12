@@ -24,8 +24,9 @@ function HomeAbout() {
                         <div className="col-lg-11 col-md-12 col-11">
                             <TitleHeadLight textb1='About' textb2='Us' lineb1='Superior Quality, Pioneering ' lineb2='Packaging Innovations' />
                         </div>
-                        <p className='text-spacing lh-lg my-3 ' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500' style={{ fontFamily: "Open Sans, sans-serif", textAlign: 'justify' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum rerum consequuntur
-                            cupiditate cumque eos, animi impedit esse! Debitis, aspernatur?</p>
+                        <p className='text-spacing lh-lg my-3 ' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500' style={{ fontFamily: "Open Sans, sans-serif", textAlign: 'justify' }}>
+                            <span className='fs-5 fw-bold'>Welcome to NANAKPROPACK, </span> a leader in innovative packaging solutions dedicated to quality, sustainability, and customer satisfaction.With extensive experience, we specialize in creating a wide range of packaging products—from corrugated boxes to custom-designed cartons—that protect and enhance your products. Our mission is to provide top-tier, eco-friendly packaging that meets your unique needs while promoting your brand's image.  Trust NANAKPROPACK for reliable, customized packaging that makes a difference.
+                        </p>
                         <a href="/CompanyInfo">
                             <AllBtn text="More About Us" />
                         </a>

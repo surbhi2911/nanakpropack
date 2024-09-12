@@ -64,7 +64,7 @@ function HomeService() {
                         <div className="col-md-6 col-11" data-aos='fade-up' data-aos-duration='1200'>
                             <TitleHeadLight textb1='Our' textb2='services' lineb1='services' lineb2='That we provide' />
                         </div>
-                        <div className='col-md-6 col-11 fs-6 lh-lg mt-4' data-aos='fade-up' data-aos-delay='200' data-aos-duration='1200'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, culpa. Quae ab eaque magnam voluptatum autem nesciunt provident minima dicta? Lorem ipsum dolor sit amet consectetur.</div>
+                        <div className='col-md-6 col-11 fs-6 lh-lg mt-4' data-aos='fade-up' data-aos-delay='200' data-aos-duration='1200'> <span className='fs-5 fw-bold'>With NANAKPROPACK,</span> you get a comprehensive range of packaging services designed to meet your business needs.</div>
                     </div>
                     <div>
                         <div>
@@ -90,7 +90,7 @@ function HomeService() {
                         <div></div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
