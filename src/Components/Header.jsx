@@ -78,8 +78,8 @@ function Header() {
 
     return (
         <>
-            <div className='text-light d-lg-block d-none pb-5 pt-3 headerNana'>
-                
+            <div className='text-light d-lg-block d-none pb-5 pt-2 headerNana'>
+
                 <div id="topbar" class="col-lg-12" >
                     <span id="topbarin">
                         <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
@@ -90,18 +90,26 @@ function Header() {
                         </span>
                     </span>
                     <span id="topbarin1">
-                        <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
-                            <FaFacebook />
-                        </span>
-                        <span class="topbarcontent">
-                            <FaInstagram />
-                        </span>
-                        <span class="topbarcontent">
-                            <FaTwitter />
-                        </span>
-                        <span class="topbarcontent">
-                            <FaLinkedin />
-                        </span>
+                        <a href="">
+                            <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                                <FaFacebook />
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="topbarcontent">
+                                <FaInstagram />
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="topbarcontent">
+                                <FaTwitter />
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="topbarcontent">
+                                <FaLinkedin />
+                            </span>
+                        </a>
                     </span>
                 </div>
             </div>
