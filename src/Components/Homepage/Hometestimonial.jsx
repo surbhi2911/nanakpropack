@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { TitleHead } from '../TitleHead';
-import { MessageSquareQuote, Quote } from 'lucide-react';
 import { MdFormatQuote } from 'react-icons/md';
 
 const teamMembers = [

@@ -18,10 +18,6 @@ const pages = [
         link: '/'
     },
     {
-        page: 'Portfolio',
-        link: '/PortFolio'
-    },
-    {
         page: 'Company Info',
         link: '/CompanyInfo'
     },
@@ -32,6 +28,10 @@ const pages = [
     {
         page: 'Contact Us',
         link: '/Contactus'
+    },
+    {
+        page: 'Portfolio',
+        link: '/PortFolio'
     },
 ];
 

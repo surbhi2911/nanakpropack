@@ -1,6 +1,10 @@
 /* .homeAbout {
     background: var(--blackgray--);
 } */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* top line start */
 #topbar {
     line-height: 40px;
@@ -135,6 +139,7 @@
     box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.8);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Home WhyUs End */
@@ -675,6 +680,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     box-shadow: inset 0px 0px 0px 1500px rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
@@ -702,22 +708,30 @@
 
 }
 
-.bgimgswiper0 {
+.bgimgswiper0,
+.bgimgswiper4,
+.bgimgswiper9 {
     background-image: url('../Images/reviews3.jpg');
     background-size: contain;
 }
 
-.bgimgswiper1 {
+.bgimgswiper1,
+.bgimgswiper5,
+.bgimgswipe10 {
     background-image: url('../Images/reviews4.jpg');
     background-size: contain;
 }
 
-.bgimgswiper2 {
+.bgimgswiper2,
+.bgimgswiper6,
+.bgimgswipe11 {
     background-image: url('../Images/reviews1.jpg');
     background-size: contain;
 }
 
-.bgimgswiper3 {
+.bgimgswiper3,
+.bgimgswiper7,
+.bgimgswipe12 {
     background-image: url('../Images/reviews1\ \(1\).png');
     background-size: contain;
 }
@@ -847,3 +861,63 @@
 
 
 /* Carousel End */
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(calc(-100px * 7));
+        /* Adjust based on number of slides and height */
+    }
+}
+
+.partners-logo-slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.slide-track {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    animation: scroll 40s linear infinite;
+    height: calc(100px * 14);
+}
+
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide:hover {
+    filter: none;
+}
+
+
+/* Pause on Hover */
+/* .partners-logo-slider:hover .slide-track {
+    animation-play-state: paused;
+} */
+.designBox2 {
+    background-color: linear-gradient(45deg, rgba(66, 60, 90, 0.6), rgba(66, 60, 90, 0.6));
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0px 0px 1500px 250px rgba(0, 0, 0, 0.8);
+}
+
+.designbox {
+    background-image: url('../Images/WhyBack.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -22,7 +22,7 @@ function PortfolioDetails() {
                     <div className="product-container py-5 mt-5 row align-items-center justify-content-center">
                         <div className="product-gallery col-lg-6 col-10 mb-lg-0 mb-5">
                             <div className="col-lg-12 col-md-8 mx-auto">
-                                <img src={product.img} alt="Main product" className="img-fluid shadow-lg" />
+                                <img src={product.img} alt="Main product" className="img-fluid shadow-lg bg-light" />
                             </div>
                         </div>
                         <div className="product-info col-lg-6 col-11 mx-auto shadow-lg py-5 px-lg-5 px-3">

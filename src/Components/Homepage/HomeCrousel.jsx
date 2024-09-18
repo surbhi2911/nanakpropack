@@ -38,7 +38,6 @@ function App() {
         // speed: 30000000,
         arrows: false,
         pauseOnHover: false,
-        dots: false,
         responsive: [
             {
                 breakpoint: 1400,
@@ -89,15 +88,15 @@ function App() {
                         <div className='container text-center'>
                             <div style={{ padding: '180px 20px 20px 20px' }}>
                                 <h1 className='display-1 fw-bold mb-2' style={{ letterSpacing: '8px' }}>
-                                    <span className='text-light'>Protective</span> <span className='orangecolor bg-light pb-1'>Packaging</span>
+                                    <span className='text-light'>Nanak</span> <span className='orangecolor bg-light pb-1'>ProPack</span>
                                 </h1>
-                                <p className='text-light fw-semibold' style={{ letterSpacing: '8px' }}>WE BUILD THE BEST</p>
+                                <p className='text-light fw-semibold' style={{ letterSpacing: '3px', textTransform: 'uppercase' }}>Unbox Reliability with Every Package</p>
                                 <FaArrowDownLong className='display-6 down-arrow orangecolor' />
                                 <Slider {...settings} className='d-flex align-items-end'>
                                     {data.map((Item, index) => {
                                         const [firstWord, secondWord] = Item.h1.split(' ');
                                         return (
-                                            <div key={index}>
+                                            <div key={index} className='mb-5'>
                                                 <div className={`${'bgimgswiper' + index} bg-light text-dark m-4`}>
                                                     <div>
                                                         <div className="bg-light mx-4 shadow-lg py-4 pb-5" style={{ position: 'relative', bottom: '-50px' }}>

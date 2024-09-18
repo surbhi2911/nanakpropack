@@ -9,6 +9,7 @@ import '../../Assets/Css/Homepage.css'
 import Hometestimonial from './Hometestimonial'
 import HomeCrousel from './HomeCrousel'
 import HomeContact from './HomeContact'
+import HomeDesignBox from './HomeDesignBox'
 
 function Homepage() {
     return (
@@ -16,8 +17,9 @@ function Homepage() {
             <div className="overflow-x-hidden" style={{ marginTop: '-43px' }}>
                 <HomeCrousel />
                 <HomeAbout />
-                <HomeProduct />
                 <HomeWhyUs />
+                <HomeProduct />
+                <HomeDesignBox />
                 <HomeService />
                 <Hometestimonial />
                 <HomeContact />
