@@ -326,3 +326,148 @@ p {
     background: #fb95044d;
     border-radius: 10px;
 }
+
+/* Main section styling */
+.mission-section {
+    background: #000000cc;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background pattern */
+.mission-section::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.mission-section::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+/* Floating animation for background circles */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Section title styling with underline animation */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+.section-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: expandUnderline 1s ease-out forwards;
+}
+
+/* Underline animation */
+@keyframes expandUnderline {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70px;
+    }
+}
+
+/* Fade-in effect for the description */
+.section-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: white;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* Fade in keyframes for text */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mission icons styling */
+.mission-icons .icon-item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-icons .icon-item i {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-icons .icon-item p {
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.mission-icons .icon-item:hover {
+    transform: translateY(-10px);
+}
+
+.mission-icons .icon-item:hover i {
+    transform: rotate(360deg);
+}

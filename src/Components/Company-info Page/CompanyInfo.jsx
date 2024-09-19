@@ -7,11 +7,13 @@ import AllBtn from '../AllBtn'
 import CountUp from 'react-countup'
 import CompanyInfoHome from './CompanyInfoHome'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
+import MissionInfo from './MissionInfo'
 
 function CompanyInfo() {
     return (
         <>
             <CompanyInfoHome />
+            <MissionInfo />
             <div className="container my-5 px-3 px-lg-5 overflow-hidden">
                 <div className="company-info">
                     <div className="py-5">

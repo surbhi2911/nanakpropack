@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineDoubleRight } from 'react-icons/ai'
 function AllBtn({ text }) {
     return (
         <button class="bn-32 bn32">
