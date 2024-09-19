@@ -28,10 +28,6 @@
 }
 
 /* scrollbar end */
-/* body {
-  background: var(--lightcolor--);
-  overflow-x: hidden;
-} */
 
 .orangecolor {
   color: var(--orange--);
@@ -66,7 +62,12 @@ body {
   /* background-attachment: fixed; */
   width: 100%;
   overflow-x: hidden;
-  font-family: "EB Garamond", serif;
+
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .btn-whatsapp-pulse {

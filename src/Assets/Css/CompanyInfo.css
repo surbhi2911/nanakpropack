@@ -332,7 +332,7 @@ p {
     background: #000000cc;
     color: white;
     padding: 60px 20px;
-    border-radius: 15px;
+    border-radius: 25px 25px 25px 25px;
     position: relative;
     overflow: hidden;
 }
@@ -470,4 +470,19 @@ p {
 
 .mission-icons .icon-item:hover i {
     transform: rotate(360deg);
+}
+
+
+
+.Aboutbtn {
+    background-color: rgb(17, 107, 107);
+    box-shadow: 3px -3px 3px rgb(11, 67, 67);
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .maindiv {
+        width: 50%;
+        margin-bottom: 20px;
+    }
 }
