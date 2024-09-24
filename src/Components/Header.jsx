@@ -155,7 +155,7 @@ function Header() {
                                                 ))}
                                             </nav>
                                         </section>
-                                        <section className="content">
+                                        <section className="content m-0">
                                             <label htmlFor="menu__trigger" className="entypo-menu">
                                                 <FaBars className='text-black' />
                                             </label>

@@ -9,6 +9,7 @@ import CompanyInfoHome from './CompanyInfoHome'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 import MissionInfo from './MissionInfo'
 import AboutCompanyinfo from './AboutCompanyinfo'
+import IndustriesInfo from './IndustriesInfo'
 
 function CompanyInfo() {
     return (
@@ -16,6 +17,7 @@ function CompanyInfo() {
             <CompanyInfoHome />
             <AboutCompanyinfo />
             <MissionInfo />
+            <IndustriesInfo />
             <div className="container my-5 px-3 px-lg-5 overflow-hidden">
                 <div className="company-info">
                     <div className="py-5">

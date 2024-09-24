@@ -36,8 +36,8 @@ function MissionInfo() {
                         {/* <p className="section-description mx-auto mb-4 display-1">
                             Our Mission
                         </p> */}
-                        <h2 className="section-title mb-4 text-start">Excellence In Printing And Packaging</h2>
-                        <p className="section-description mx-auto mb-4 display-1 pb-5" style={{ borderBottom: '5px dotted  white' }}>
+                        <h2 className="section-title text-light mb-4 text-start">Excellence In Printing And Packaging</h2>
+                        <p className=" text-light section-description mx-auto mb-4 display-1 pb-5" style={{ borderBottom: '5px dotted  white' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                         </p>
                         <div className="mission-icons d-flex flex-wrap justify-content-center gap-4 mt-4">
