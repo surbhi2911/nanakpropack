@@ -17,7 +17,6 @@ function CompanyInfo() {
             <CompanyInfoHome />
             <AboutCompanyinfo />
             <MissionInfo />
-            <IndustriesInfo />
             <div className="container my-5 px-3 px-lg-5 overflow-hidden">
                 <div className="company-info">
                     <div className="py-5">
@@ -44,6 +43,7 @@ function CompanyInfo() {
                     </div>
                 </div>
             </div>
+            <IndustriesInfo />
 
 
             <div className="container my-5 overflow-hidden">
@@ -87,7 +87,7 @@ function CompanyInfo() {
                 </section>
             </div>
 
-            <div className='happyclients py-5 overflow-hidden'>
+            {/* <div className='happyclients py-5 overflow-hidden'>
                 <div className="container">
                     <div className="Metrics">
                         <h1 className='text-light text-center '>Our Achievements in Numbers</h1>
@@ -193,7 +193,7 @@ function CompanyInfo() {
                     </div>
                 </section>
 
-            </div>
+            </div> */}
 
 
         </>
