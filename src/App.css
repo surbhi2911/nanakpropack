@@ -5,7 +5,8 @@
   --black--: #303849;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+/* 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap'); */
 
 /* scrollbar start */
 
@@ -66,7 +67,7 @@ body {
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 500;
 }
 

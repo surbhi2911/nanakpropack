@@ -12,7 +12,7 @@ import AboutCompanyinfo from './AboutCompanyinfo'
 import IndustriesInfo from './IndustriesInfo'
 
 function CompanyInfo() {
-    return (
+    return (    
         <>
             <CompanyInfoHome />
             <AboutCompanyinfo />

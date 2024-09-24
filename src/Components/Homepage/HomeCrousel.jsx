@@ -8,20 +8,24 @@ import { FaArrowDownLong } from 'react-icons/fa6';
 
 const data = [
     {
-        h1: 'WITH CARE',
-        h6: 'How We Can Help '
+        h1: 'Mono Carton',
+        h6: "efficient product packaging.",
+        img: require('../../Assets/Images/PNG Images/Mono_Carton3-removebg-preview.png'),
     },
     {
-        h1: 'FAST WORK',
-        h6: 'Our Products & Services'
+        h1: 'Cake Boxes',
+        h6: 'cake boxes for transport',
+        img: require('../../Assets/Images/PNG Images/large-cake-boxes-removebg-preview.png'),
     },
     {
-        h1: 'GREATE QUALITY',
-        h6: 'Why Us'
+        h1: 'Corrugated Sheet',
+        h6: 'versatile packaging needs',
+        img: require('../../Assets/Images/Corrugated sheets/corrugated sheet1.jpg'),
     },
     {
-        h1: 'CLIENT FOCUS',
-        h6: 'Customer Satisfaction'
+        h1: 'Duplex',
+        h6: 'superior packaging strength',
+        img: require('../../Assets/Images/Corrugated sheets/duplex1.jpg'),
     }
 
 ]
@@ -97,15 +101,15 @@ function App() {
                                         const [firstWord, secondWord] = Item.h1.split(' ');
                                         return (
                                             <div key={index} className='mb-5'>
-                                                <div className={`${'bgimgswiper' + index} bg-light text-dark m-4`}>
+                                                <div className={`bg-light text-dark m-4`} style={{ backgroundImage: `url(${Item.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                                     <div>
-                                                        <div className="bg-light mx-4 shadow-lg py-4 pb-5" style={{ position: 'relative', bottom: '-50px' }}>
+                                                        <div className="mx-4 shadow-lg py-4 pb-5" style={{ background: '#303849de', position: 'relative', bottom: '-50px' }}>
                                                             <div className="pb-3" style={{ margin: 'auto' }}>
                                                                 <div style={{ fontSize: '27px' }} className='text-dark fw-bold'>
-                                                                    <span style={{ color: '#333' }}>{firstWord}</span>{' '}
+                                                                    <span style={{ color: '#fff' }}>{firstWord}</span>{' '}
                                                                     <span className='orangecolor'>{secondWord}</span>
                                                                 </div>
-                                                                <div style={{ fontSize: '20px' }} className='orangecolor fw-light'>{Item.h6}</div>
+                                                                <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
                                                             </div>
                                                         </div>
                                                     </div>
