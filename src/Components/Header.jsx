@@ -26,12 +26,16 @@ const pages = [
         link: '/Product'
     },
     {
+        page: 'Portfolio',
+        link: '/PortFolio'
+    },
+    {
         page: 'Contact Us',
         link: '/Contactus'
     },
     {
-        page: 'Portfolio',
-        link: '/PortFolio'
+        page: 'Faq',
+        link: '/Faq'
     },
 ];
 

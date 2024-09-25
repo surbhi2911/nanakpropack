@@ -1,0 +1,47 @@
+.accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+    content: '\274F';
+}
+
+.accordion-button::after {
+    content: '\2750';
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+}
+
+.accordion-item {
+    margin-top: 30px !important;
+    background-color: transparent !important;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--black--) !important;
+    color: white !important;
+    border-bottom: 2px solid var(--black--) !important;
+    margin-bottom: 10px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    background: white !important;
+    color: var(--black--) !important;
+}
+
+.accordion-button {
+    background: var(--black--) !important;
+    color: white !important;
+}

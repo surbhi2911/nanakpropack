@@ -13,6 +13,7 @@ import CompanyInfo from './Components/Company-info Page/CompanyInfo';
 import PortfolioDetails from './Components/PortfolioPage/PortfolioDetails';
 import ScrollToTop from './Components/ScrollToTop';
 import Data from './Components/Company-info Page/Data';
+import Faq from './Components/FAQ/Faq';
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/PortFolio' element={<Portfolio />} />
           <Route path='/PortFolio/:id' element={<PortfolioDetails />} />
           <Route path='/CompanyInfo' element={<CompanyInfo />} />
+          <Route path='/Faq' element={<Faq />} />
         </Routes>
       </BrowserRouter>
     </>
