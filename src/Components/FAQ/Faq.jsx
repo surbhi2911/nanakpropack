@@ -3,10 +3,12 @@ import HOC from '../HOC'
 import { Layers, Package, User } from 'lucide-react'
 import '../../Assets/Css/Faq.css'
 import FaqAccordian from './FaqAccordian'
+import FaqMain from './FaqMain'
 function Faq() {
 
     return (
         <>
+            <FaqMain />
             <div className='container my-5 py-5'>
                 <div className='row justify-content-center align-items-center text-center'>
                     <div className='col-md-4 col- p-5' style={{ background: 'var(--black--)', borderRight: '2px solid var(--black--)' }}>
