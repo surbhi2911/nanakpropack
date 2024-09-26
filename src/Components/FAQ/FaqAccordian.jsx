@@ -1,5 +1,6 @@
 import React from 'react'
 import { TitleHeadLight } from '../TitleHead'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 
 function FaqAccordian() {
     return (
@@ -73,15 +74,32 @@ function FaqAccordian() {
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        how and whom to contact for order?
+                                        How and whom to contact for order?
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        For this you can give a link with our full contact details.
+                                        <div className="contact-details">
+                                            <p>For inquiries and placing orders, please contact us through the following:</p>
+                                            <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
+                                                <li>
+                                                    <Phone style={{ marginRight: '10px' }} />
+                                                    <strong>Phone:</strong> <a href="tel:+1234567890" className='text-decoration-none text-dark'>+1 234 567 890</a>
+                                                </li>
+                                                <li>
+                                                    <Mail style={{ marginRight: '10px' }} />
+                                                    <strong>Email:</strong> <a href="mailto:xyz@gmail.com" className='text-decoration-none text-dark'>xyz@gmail.com</a>
+                                                </li>
+                                                <li>
+                                                    <MapPin style={{ marginRight: '10px' }} />
+                                                    <strong>Address:</strong> <a href="https://goo.gl/maps/xyz123" className='text-decoration-none text-dark' target="_blank" rel="noopener noreferrer">1234 Business Road, Suite 100, City, Country</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

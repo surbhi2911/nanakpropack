@@ -6,6 +6,7 @@ import { Tabs, Tab, Box } from '@mui/material';
 import { departments } from './departments';
 import AllBtn from '../AllBtn';
 import ProductsMain from '../PortfolioPage/ProductsMain';
+import { Link } from 'react-router-dom';
 
 function Product() {
     const [activeTab, setActiveTab] = useState("tabs-tab-1");
@@ -72,7 +73,7 @@ function Product() {
                     </Tabs>
                     {departments.map((department) => (
                         <TabPanel key={department.id} value={activeTab} index={department.id}>
-                            <div >
+                            <div>
                                 {department.subimage.map((item, index) => (
                                     <div className="my-2" key={index}>
                                         <div className='row my-5 justify-content-center'>
@@ -103,10 +104,12 @@ function Product() {
                                                     <TitleHead text2={item.MainName} />
                                                 </div>
                                                 <p className='text-light' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
-                                                <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer" ss>
-                                                    <AllBtn text='Get Quote' data-aos="fade-left" data-aos-duration="2000" />
-                                                    <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>whats'app your custom packaging now!</p>
-                                                </a>
+                                                {/* <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer" ss> */}
+                                                <Link to={'/ProductDesignBox'}>
+                                                    <AllBtn text='Design Your Box' data-aos="fade-left" data-aos-duration="2000" />
+                                                </Link>
+                                                <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>design your custom packaging now!</p>
+                                                {/* </a> */}
                                             </div>
                                         </div>
                                     </div>

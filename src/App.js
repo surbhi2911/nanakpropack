@@ -14,6 +14,7 @@ import PortfolioDetails from './Components/PortfolioPage/PortfolioDetails';
 import ScrollToTop from './Components/ScrollToTop';
 import Data from './Components/Company-info Page/Data';
 import Faq from './Components/FAQ/Faq';
+import ProductDesignBox from './Components/ProductPage/ProductDesignBox';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/Product' element={<Product />} />
+          <Route path='/ProductDesignBox' element={<ProductDesignBox />} />
           <Route path='/Contactus' element={<Contactus />} />
           <Route path='/Contactus/:id' element={<Data />} />
           <Route path='/PortFolio' element={<Portfolio />} />
