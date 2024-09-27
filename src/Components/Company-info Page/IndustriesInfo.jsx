@@ -25,10 +25,10 @@ function IndustriesInfo() {
                                     <h1>{item.title}</h1> */}
 
                                     <Link to={`/Contactus/${item.Id}`} className='text-center text-decoration-none'>
-                                        <div class="darksoul-card2 mx-auto">
-                                            <div class="circle2"></div>
+                                        <div className="darksoul-card2 mx-auto">
+                                            <div className="circle2"></div>
                                             <div className='icon'>{item.icon}</div>
-                                            <p class="content">{item.title}</p>
+                                            <p className="content">{item.title}</p>
                                         </div>
                                     </Link>
 

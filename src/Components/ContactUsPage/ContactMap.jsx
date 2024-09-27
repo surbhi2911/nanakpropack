@@ -4,8 +4,8 @@ function ContactMap() {
     return (
         <>
             <div className="container overflow-x-hidden">
-                <div class="map-container ">
-                    <div class="map-overlay">
+                <div className="map-container ">
+                    <div className="map-overlay">
                         <h3>Visit Us Here!</h3>
                         <p>Find our office at the heart of the city.</p>
                     </div>
@@ -17,7 +17,7 @@ function ContactMap() {
                         allowfullscreen=""
                         aria-hidden="false"
                         tabindex="0"
-                        class="styled-map">
+                        className="styled-map">
                     </iframe>
                 </div>
             </div>

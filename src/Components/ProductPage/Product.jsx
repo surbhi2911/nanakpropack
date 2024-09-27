@@ -160,9 +160,8 @@ function Product() {
                                             {/* <img height={100} width={100} src={selectedProduct.MainImage} alt={selectedProduct.MainName} className='img-fluid' /> */}
                                             {selectedProduct.SubImageData.map((item, i) => {
                                                 return (
-                                                    <div key={i}>
-                                                        <img src={item} alt="" width={100} height={100} className='mx-3' />
-                                                    </div>
+                                                    <img src={item} alt="" key={i} width={100} height={100} className='mx-3' />
+
                                                 )
                                             })}
                                         </div>

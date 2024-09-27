@@ -98,7 +98,7 @@ function HomeWhyUs() {
                         {
                             choose.map((x, i) => {
                                 return (
-                                    <>
+                                    
                                         <div className='col-lg-3 col-11 px-1 py-2 my-md-2 my-1' data-aos='fade-right' data-aos-delay='300' data-aos-duration='1200' key={i}>
                                             <div className='fw-light display-4 my-2'>
                                                 {x.icon}
@@ -106,7 +106,7 @@ function HomeWhyUs() {
                                             <h2 className='fw-light fs-4 my-2 orangecolor' style={{ textTransform: "capitalize" }}>{x.name} <span className='fw-bold '>{x.bname}</span></h2>
                                             <p className='my-2'>{x.pera}</p>
                                         </div>
-                                    </>
+                                   
                                 )
                             })
                         }

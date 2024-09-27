@@ -89,7 +89,7 @@ function HomeTeam() {
         <div className="pt-5">
             <div className='container-lg my-5'>
                 <TitleHeadLight textb1='Our' textb2='Team' lineb1='Where Hard Work' lineb2='Meets Succes With Team' />
-                <div class="main row justify-content-lg-evenly justify-content-center align-items-center">
+                <div className="main row justify-content-lg-evenly justify-content-center align-items-center">
 
                     {teamMembers.map((member, index) => (
                         <div className="profileheight">

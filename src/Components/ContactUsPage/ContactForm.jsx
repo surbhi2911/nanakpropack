@@ -103,17 +103,17 @@ function ContactForm() {
     return (
         <>
             <div className="pb-5 overflow-x-hidden">
-                <div class="container overflow-hidden">
-                    <div class="row g-4 p-3 my-5 m-0">
-                        <div class="col-lg-4 section overflow-hidden d-flex align-items-center justify-content-center" data-aos="zoom-in-right" data-aos-duration="1800">
+                <div className="container overflow-hidden">
+                    <div className="row g-4 p-3 my-5 m-0">
+                        <div className="col-lg-4 section overflow-hidden d-flex align-items-center justify-content-center" data-aos="zoom-in-right" data-aos-duration="1800">
                             <img src={require('../../Assets/Images/WhyBack.avif')} alt="" className="img-fluid h-100" />
                         </div>
-                        <div class="col-lg-8" >
+                        <div className="col-lg-8" >
                             <form data-aos="zoom-in-left" data-aos-duration="1800">
                                 <div className="col-lg-11 col-md-12 col-11 pb-5 ">
                                     <TitleHeadLight textb1='Connect With' textb2='Us' lineb1='Get in touch' lineb2='we are here to help!' />
                                 </div>
-                                <div class="row gy-2">
+                                <div className="row gy-2">
                                     <div className='col-md-6'>
                                         <input type="text" name='name' placeholder='Your Name' className='p-3 w-100 border-0 shadow-lg rounded rounded-3' onChange={getdata} value={obj.name} />
                                         <span className='text-danger d-block' style={{ fontSize: "14px", height: "17px" }} >{errmsg.name}</span>
@@ -135,7 +135,7 @@ function ContactForm() {
                                         <span className='text-danger d-block' style={{ fontSize: "14px", height: "17px" }} >{errmsg.textarea}</span>
                                     </div>
                                     <div
-                                        class=" col-md-12 ">
+                                        className=" col-md-12 ">
                                         <div className='btn_hover w-100'>
                                             <AllBtn text='submit' />
                                         </div>

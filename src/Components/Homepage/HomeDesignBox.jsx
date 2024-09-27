@@ -38,7 +38,7 @@ const HomeDesignBox = () => {
                             ))} */}
                             <ImageList variant="masonry" cols={2} gap={8} className='slide-track'>
                                 {logos.concat(logos).map((item, index) => (
-                                    <ImageListItem key={item.img} className='slide bg-light rounded-4'>
+                                    <ImageListItem key={index} className='slide bg-light rounded-4'>
                                         <img
                                             srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                             src={`${item}?w=248&fit=crop&auto=format`}

@@ -112,15 +112,15 @@ function Hometestimonial() {
                                 <Slider {...settings} className="p-0 m-0 text-white text-center pt-2 ">
                                     {teamMembers.map((x, i) => {
                                         return (
-                                            <>
-                                                <div className='slickback p-5'>
+                                            
+                                                <div className='slickback p-5' key={i}>
                                                     <div>
                                                         <div className='my-2' style={{ textAlign: 'justify' }}><MdFormatQuote className='orangecolor fs-3' /> {x.message} <MdFormatQuote className='orangecolor fs-3' /> </div>
                                                         <h4 className='text-end my-2'>— {x.name} </h4>
                                                         <p className='text-end text-light my-2'>{x.position}</p>
                                                     </div>
                                                 </div>
-                                            </>
+                                          
                                         );
                                     })}
                                 </Slider>

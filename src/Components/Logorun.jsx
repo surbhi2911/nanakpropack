@@ -72,24 +72,24 @@ function Logorun() {
                         <div className="">
                             <TitleHeadLight textb2='Trusted by' lineb2='the world’s leading organizations' />
                         </div>
-                        <div className="my-1 ">
+                        <div className="my-1">
                             <Slider {...settings}  >
                                 {carddata?.map((x, i) => {
                                     return (
-                                        <>
-                                            <div className="bg-light m-3" style={{ height: '140px' }}>
-                                                <div
-                                                    className="p-3 p-lg-5 "
-                                                >
-                                                    <img
-                                                        src={x.img}
-                                                        alt=""
-                                                        className="img-fluid h-100 w-100 object-fit-cover  "
 
-                                                    />
-                                                </div>
+                                        <div className="bg-light m-3" style={{ height: '140px' }} key={i}>
+                                            <div
+                                                className="p-3 p-lg-5 "
+                                            >
+                                                <img
+                                                    src={x.img}
+                                                    alt=""
+                                                    className="img-fluid h-100 w-100 object-fit-cover  "
+
+                                                />
                                             </div>
-                                        </>
+                                        </div>
+
                                     );
                                 })}
                             </Slider>

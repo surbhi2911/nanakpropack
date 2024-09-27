@@ -5,30 +5,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Slider from 'react-slick';
 import { FaArrowDownLong } from 'react-icons/fa6';
+import { Box } from 'lucide-react';
+import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { ProductList } from '../../ProductList';
 
-const data = [
-    {
-        h1: 'Mono Carton',
-        h6: "efficient product packaging.",
-        img: require('../../Assets/Images/PNG Images/Mono_Carton3-removebg-preview.png'),
-    },
-    {
-        h1: 'Cake Boxes',
-        h6: 'cake boxes for transport',
-        img: require('../../Assets/Images/PNG Images/large-cake-boxes-removebg-preview.png'),
-    },
-    {
-        h1: 'Corrugated Sheet',
-        h6: 'versatile packaging needs',
-        img: require('../../Assets/Images/Corrugated sheets/corrugated sheet1.jpg'),
-    },
-    {
-        h1: 'Duplex',
-        h6: 'superior packaging strength',
-        img: require('../../Assets/Images/Corrugated sheets/duplex1.jpg'),
-    }
-
-]
 
 function App() {
     var settings = {
@@ -97,11 +78,14 @@ function App() {
                                 <p className='text-light fw-semibold' style={{ letterSpacing: '3px', textTransform: 'uppercase' }}>Unbox Reliability with Every Package</p>
                                 <FaArrowDownLong className='display-6 down-arrow orangecolor' />
                                 <Slider {...settings} className='d-flex align-items-end'>
-                                    {data.map((Item, index) => {
-                                        const [firstWord, secondWord] = Item.h1.split(' ');
+                                    {ProductList.map((Item, index) => {
+                                        // const [firstWord, secondWord] = Item.h1.split(' ');
                                         return (
-                                            <div key={index} className='mb-5'>
-                                                <div className={`bg-light text-dark m-4`} style={{ backgroundImage: `url(${Item.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                                            <div key={index} className='my-3'>
+                                                <div className='mx-5' style={{ background: `${Item.bg}`, border: '2px solid black', boxShadow: "rgb(48, 67, 88) 0px 30px 40px -5px" }}>
+                                                    <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '200px', width: 'auto' }} />
+                                                </div>
+                                                {/* <div className={`bg-light text-dark m-4`} style={{ backgroundImage: `url(${Item.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                                     <div>
                                                         <div className="mx-4 shadow-lg py-4 pb-5" style={{ background: '#303849de', position: 'relative', bottom: '-50px' }}>
                                                             <div className="pb-3" style={{ margin: 'auto' }}>
@@ -113,16 +97,18 @@ function App() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         );
                                     })}
+
+
                                 </Slider>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     );
 }

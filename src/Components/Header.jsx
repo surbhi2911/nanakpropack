@@ -84,33 +84,33 @@ function Header() {
         <>
             <div className='text-light d-lg-block d-none pb-5 pt-2 headerNana'>
 
-                <div id="topbar" class="col-lg-12" >
+                <div id="topbar" className="col-lg-12" >
                     <span id="topbarin">
-                        <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                        <span className="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
                             #34-strreet A Newyork Lorem ipsum dolor sit amet.
                         </span>
-                        <span class="topbarcontent">
+                        <span className="topbarcontent">
                             +91 70483 13227
                         </span>
                     </span>
                     <span id="topbarin1">
                         <a href="">
-                            <span class="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                            <span className="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
                                 <FaFacebook />
                             </span>
                         </a>
                         <a href="">
-                            <span class="topbarcontent">
+                            <span className="topbarcontent">
                                 <FaInstagram />
                             </span>
                         </a>
                         <a href="">
-                            <span class="topbarcontent">
+                            <span className="topbarcontent">
                                 <FaTwitter />
                             </span>
                         </a>
                         <a href="">
-                            <span class="topbarcontent">
+                            <span className="topbarcontent">
                                 <FaLinkedin />
                             </span>
                         </a>
@@ -187,8 +187,8 @@ function Header() {
                                 <img src={require('../Assets/Images/nanak_LOGO-removebg.png')} alt="" className='ms-3 m-1' style={{ width: '150px' }} />
                             </Typography>
                             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                {pages.map((page) => (
-                                    <Link to={page.link} className='text-decoration-none text-dark'>
+                                {pages.map((page, i) => (
+                                    <Link to={page.link} key={i} className='text-decoration-none text-dark'>
                                         <Button
                                             key={page}
                                             onClick={handleClose}
