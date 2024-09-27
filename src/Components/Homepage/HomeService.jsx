@@ -34,7 +34,7 @@ const services = [
         icon: <FaChartLine className='display-2 p-lg-3 p-md-2 p-0 my-3 rounded-circle p-2 footerHandshake' />,
         data_aos: 'fade',
         data_aos_duration: '500',
-        data_aos_delay: '1500'
+        data_aos_delay: '500'
     },
     {
         title: "Innovative Packaging Technology",
@@ -50,7 +50,7 @@ const services = [
         icon: <FaTruck className='display-2 p-lg-3 p-md-2 p-0 my-3 rounded-circle p-2 footerHandshake' />,
         data_aos: 'fade',
         data_aos_duration: '500',
-        data_aos_delay: '500'
+        data_aos_delay: '1500'
     },
 ]
 
@@ -71,7 +71,7 @@ function HomeService() {
                             <Container className="service-section py-5 mx-auto" fluid="xxl">
                                 <Row className="justify-content-md-between justify-content-center">
                                     {services.map((service, index) => (
-                                        <Col lg={4} md={5} sm={12} xs={11} key={index} className="card my-lg-0 mx-lg-0 my-sm-5 mx-sm-3 my-5 mx-5" data-aos='fade' data-aos-delay={service.data_aos_delay} data-aos-duration={service.data_aos_duration}>
+                                        <Col lg={4} md={5} sm={12} xs={11} key={index} className="card my-lg-0 mx-lg-0 my-sm-5 mx-sm-3 my-5 mx-5" data-aos='flip-left' data-aos-easing="ease-out-cubic" data-aos-delay={service.data_aos_delay} data-aos-duration={service.data_aos_duration}>
                                             <Card className="service-card h-100 shadow-sm content">
                                                 <Card.Body className="pt-0 ps-0 pb-4">
                                                     {service.icon && (

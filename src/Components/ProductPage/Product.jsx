@@ -95,10 +95,10 @@ function Product() {
                                                     alt={item.MainName}
                                                     style={{ height: 350 }}
                                                 />
-                                                <div className="col-12">
+                                                <div className="col-12" data-aos="fade-down" data-aos-duration="2000">
                                                     {item.SubImageData.map((subImage, subIndex) => (
                                                         <div className="d-inline m-lg-3" key={subIndex}>
-                                                            <img data-aos="fade-down" data-aos-duration="2000"
+                                                            <img
                                                                 src={subImage}
                                                                 alt={`SubImage ${subIndex + 1}`}
                                                                 className="img-fluid my-2"
@@ -109,7 +109,7 @@ function Product() {
                                                     ))}
                                                 </div>
                                             </div>
-                                            <div className='col-lg-6 col-md-12 col-12 lh-lg custom-border bg_black px-lg-5 px-md-4 px-sm-3 px-1 border border-5 border-start-5 border-end-0 border-top-0 border-bottom-0 py-2 unique-box-shadow'>
+                                            <div className='col-lg-6 col-md-12 col-12 lh-lg custom-border bg_black px-lg-5 px-md-4 px-sm-3 px-1 border border-5 border-start-5 border-end-0 border-top-0 border-bottom-0 py-2 unique-box-shadow' data-aos="fade-left" data-aos-duration="2000">
                                                 <div className="py-3 overflow-x-hidden  my-4">
                                                     <TitleHead text2={item.MainName} />
                                                 </div>
@@ -140,28 +140,23 @@ function Product() {
                     }}>
                         {selectedProduct && (
                             <div className="container">
-                                <div className="heading-section">
-                                    <h2>{selectedProduct.MainName}</h2>
-                                </div>
+
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="product-dtl">
                                             <div className="product-info">
-                                                <div className="product-name">{selectedProduct.MainName}</div>
+                                                <div className="heading-section text-start">
+                                                    <h2>{selectedProduct.MainName}</h2>
+                                                </div>
                                             </div>
                                             <p>{selectedProduct.ProductDetails}</p>
-                                            {/* Name Input Field */}
-
-
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="item text-center">
-                                            {/* <img height={100} width={100} src={selectedProduct.MainImage} alt={selectedProduct.MainName} className='img-fluid' /> */}
                                             {selectedProduct.SubImageData.map((item, i) => {
                                                 return (
                                                     <img src={item} alt="" key={i} width={100} height={100} className='mx-3' />
-
                                                 )
                                             })}
                                         </div>

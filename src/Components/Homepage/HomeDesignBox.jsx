@@ -24,18 +24,12 @@ const HomeDesignBox = () => {
             <div className="designBox2">
                 <div className="container my-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
                     <div className="row">
-                        <div className="col-lg-5 col-md-7 col-sm-9 col-11 m-auto">
+                        <div className="col-lg-5 col-md-7 col-sm-9 col-11 m-auto" data-aos="fade-right" data-aos-duration='1500'>
                             <h1 className="display-4 fw-bold orangecolor text-capitalize my-5" style={{ textShadow: '1px 1px black' }}><span className="text-light" >Custom packaging</span> designed to <span className="text-light" >fit your business</span> </h1>
                             <p className="fs-6 text-light">Explore, design and order sustainable packaging your customers will love</p>
                             <Link to="/Product"><div className="fs-5"><AllBtn text="Design Your Box" /></div></Link>
                         </div>
-                        <div className="partners-logo-slider col-lg-6 col-md-8 col-sm-10 col-11 my-lg-0 my-5 py-2 py-lg-5">
-                            {/* <div className="slide-track"> */}
-                            {/* {logos.concat(logos).map((logo, index) => (
-                                <div className="slide bg-light rounded-4" key={index}>
-                                    <img src={logo} alt="Logo" className=" rounded-4" />
-                                </div>
-                            ))} */}
+                        <div className="partners-logo-slider col-lg-6 col-md-8 col-sm-10 col-11 my-lg-0 my-5 py-2 py-lg-5" data-aos="fade-left" data-aos-duration='1500'>
                             <ImageList variant="masonry" cols={2} gap={8} className='slide-track'>
                                 {logos.concat(logos).map((item, index) => (
                                     <ImageListItem key={index} className='slide bg-light rounded-4'>
@@ -49,7 +43,6 @@ const HomeDesignBox = () => {
                                     </ImageListItem>
                                 ))}
                             </ImageList>
-                            {/* </div> */}
                         </div>
                     </div>
                 </div>

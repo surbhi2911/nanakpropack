@@ -14,14 +14,17 @@ function FaqAccordian() {
                                 <TitleHeadLight textb1='Quick' textb2='Answers' lineb1='Answers' lineb2='to your packaging questions' />
                                 {/* <p className='text-dark fw-normal lh-lg' style={{ fontFamily: 'serif' }}>Lorem ipsum dolor sit amet conse adipisicing elit. Hic, praesentium? Lorem ipsum dolor sit, amet conser adipisicing elit. Aperiam, repre henderit. Lorem ipsum dolor sit, amet consectetur adipisicing.</p> */}
                             </div>
-                            <div className='col-lg-12 col-sm-6'>
+                            <div className='col-lg-12 col-sm-6' data-aos="zoom-in" data-aos-duration='1500'>
                                 <div className="col-12 text-center">
                                     <img src={require('../../Assets/Images/mainImage/corrugated-boxes (1).jpg')} alt="not Found" className='img-fluid object-fit-cover w-100 h-100' />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-8 col-11">
+                    <div className="col-lg-8 col-11" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="1500"
+                        data-aos-duration="1500">
                         <div className="accordion" id="accordionExample">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingOne">

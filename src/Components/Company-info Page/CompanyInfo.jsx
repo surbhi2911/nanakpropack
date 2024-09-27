@@ -50,7 +50,7 @@ function CompanyInfo() {
                 <section className="productivity-section">
                     <div className="container">
                         <div className="content row justify-content-center">
-                            <div className="image-content text-center col-md-6 col-11 player">
+                            <div className="image-content text-center col-md-6 col-11 player" data-aos="fade-right"data-aos-duration='1500'>
                                 {/* <img src='https://img.freepik.com/free-photo/medium-shot-young-people-with-reviews_23-2149394417.jpg?w=900&t=st=1725945010~exp=1725945610~hmac=4a31e142e7309b30ed4cec5f2fb83f746d476ca534ee84f1dc30397aa4f464c1' alt="Team collaborating on a project" className='img-fluid' /> */}
                                 <Player
                                     autoplay

@@ -66,7 +66,7 @@ function Logorun() {
     ];
     return (
         <>
-            <div className="logorun_bck py-5 px-0 px-lg-5 ">
+            <div className="logorun_bck py-5 px-0 px-lg-5">
                 <div className="container mb-5">
                     <div className='logorun'>
                         <div className="">

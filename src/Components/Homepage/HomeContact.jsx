@@ -5,7 +5,7 @@ function HomeContact() {
     return (
         <div className="homeform pt-4 pb-5">
             <div className="container mb-4">
-                <div className='col-lg-8 col-md-9 col-sm-10 col-11 mx-auto '>
+                <div className='col-lg-8 col-md-9 col-sm-10 col-11 mx-auto' data-aos='zoom-in-up' data-aos-duration='1500'>
                     <div>
                         <div className='text-center my-5'>
                             <div style={{ fontSize: '4rem', fontFamily: "EB Garamond, serif" }} className='fw-normal my-3'>Join the Conversations</div>

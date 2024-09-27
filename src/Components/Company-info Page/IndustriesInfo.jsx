@@ -18,12 +18,7 @@ function IndustriesInfo() {
                     {IndustryData.map((item, index) => {
                         return (
                             <>
-                                <div className='col-lg-2 col-md-3 col-sm-4 col-5 p-2 text-center'>
-                                    {/* <div className="display-1">
-                                        {item.icon}
-                                    </div>
-                                    <h1>{item.title}</h1> */}
-
+                                <div className='col-lg-2 col-md-3 col-sm-4 col-5 p-2 text-center' data-aos="flip-left" data-aos-duration="1500">
                                     <Link to={`/Contactus/${item.Id}`} className='text-center text-decoration-none'>
                                         <div className="darksoul-card2 mx-auto">
                                             <div className="circle2"></div>
@@ -31,7 +26,6 @@ function IndustriesInfo() {
                                             <p className="content">{item.title}</p>
                                         </div>
                                     </Link>
-
                                 </div >
                             </>
                         )
