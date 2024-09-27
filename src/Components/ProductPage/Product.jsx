@@ -142,27 +142,25 @@ function Product() {
                             <div className="container">
 
                                 <div className="row">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 my-5">
                                         <div className="product-dtl">
                                             <div className="product-info">
-                                                <div className="heading-section text-start">
-                                                    <h2>{selectedProduct.MainName}</h2>
-                                                </div>
+                                                <h2 className='orangecolor fw-bold display-4'>{selectedProduct.MainName}</h2>
                                             </div>
-                                            <p>{selectedProduct.ProductDetails}</p>
+                                            <p className='lh-lg'>{selectedProduct.ProductDetails}</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 m-auto">
                                         <div className="item text-center">
                                             {selectedProduct.SubImageData.map((item, i) => {
                                                 return (
-                                                    <img src={item} alt="" key={i} width={100} height={100} className='mx-3' />
+                                                    <img src={item} alt="" key={i} width={100} height={100} className='mx-3 border border-dark border-2 shadow-lg rounded-0' />
                                                 )
                                             })}
                                         </div>
 
                                     </div>
-                                    <div className="col-12">
+                                    <div className="col-12 my-3">
                                         <ProductDesignBox />
                                     </div>
                                 </div>

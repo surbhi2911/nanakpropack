@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AllBtn from '../AllBtn';
 import { TitleHeadLight } from '../TitleHead';
 import emailjs from '@emailjs/browser'; // Import EmailJS
+import { FaArrowDownLong } from 'react-icons/fa6';
 
 function ProductDesignBox() {
     const [formData, setFormData] = useState({
@@ -66,15 +67,28 @@ function ProductDesignBox() {
                 alert('There was an error sending your request. Please try again later.');
             });
     };
-
+    const scrollToForm = () => {
+        const formSection = document.getElementById('design-form');
+        if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
-        <div className="container design-box-form py-5">
-            <TitleHeadLight
-                textb1='Design Your Own'
-                textb2='Box'
-                lineb1='Customize your box'
-                lineb2="to fit your product's needs perfectly!"
-            />
+        <div className="container design-box-form" id='design-form'>
+            <div className="row">
+                <div className="col-lg-9 col-11">
+                    <TitleHeadLight
+                        textb1='Design Your Own'
+                        textb2='Box'
+                        lineb1='Customize your box'
+                        lineb2="to fit your product's needs perfectly!"
+                    />
+                </div>
+                <div className="col-lg-3 col-11 m-auto text-center">
+                    <FaArrowDownLong className='display-6 down-arrow orangecolor' onClick={scrollToForm} />
+                    <h5 className='fw-medium mt-2'>Scroll <span className='orangecolor'>Down</span></h5>
+                </div>
+            </div>
             <div className="row">
 
                 <div className="col-md-6 col-11">

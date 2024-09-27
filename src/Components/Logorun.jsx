@@ -13,9 +13,9 @@ function Logorun() {
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2500,
-        swipe: false, // touch swipe
-        arrows: false, //nex and previous button off
-        pauseOnHover: false, // Set to false to continue autoplay on hover
+        swipe: false, 
+        arrows: false, 
+        pauseOnHover: false, 
         responsive: [
             {
                 breakpoint: 1024,
