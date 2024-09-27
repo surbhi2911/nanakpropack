@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import '../../Assets/Css/Product.css';
 import HOC from '../HOC';
 import { TitleHead } from '../TitleHead';
-import { Tabs, Tab, Box } from '@mui/material';
+import { Tabs, Tab, Box, Modal, Select, MenuItem, FormControl, InputLabel, TextField } from '@mui/material';
 import { departments } from './departments';
 import AllBtn from '../AllBtn';
 import ProductsMain from '../PortfolioPage/ProductsMain';
-import { Link } from 'react-router-dom';
+import ProductDesignBox from './ProductDesignBox';
 
 function Product() {
     const [activeTab, setActiveTab] = useState("tabs-tab-1");
@@ -14,6 +14,14 @@ function Product() {
     const [mainImages, setMainImages] = useState(
         selectedDepartment.subimage.map((item) => item.MainImage)
     );
+    const [open, setOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
+    const handleOpen = (product) => {
+        setSelectedProduct(product);
+        setOpen(true);
+    };
+    const handleClose = () => setOpen(false);
 
     const handleTabChange = (event, newValue) => {
         setActiveTab(newValue);
@@ -28,8 +36,10 @@ function Product() {
         setMainImages(newMainImages);
     };
 
+
     return (
-        <><ProductsMain />
+        <>
+            <ProductsMain />
             <div className="container my-5 overflow-x-hidden">
                 <Box sx={{ width: '100%' }}>
                     <Tabs
@@ -104,14 +114,13 @@ function Product() {
                                                     <TitleHead text2={item.MainName} />
                                                 </div>
                                                 <p className='text-light' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
-                                                {/* <a href={`https://wa.me/7048313227?text=Hello,%20I'm%20interested%20in%20${item.MainName}.%20Could%20you%20please%20provide%20more%20information?`} data-aos="fade-left" data-aos-duration="2000" target='_blank' rel="noreferrer" ss> */}
-                                                <Link to={'/ProductDesignBox'}>
+                                                <div onClick={() => handleOpen(item)}>
                                                     <AllBtn text='Design Your Box' data-aos="fade-left" data-aos-duration="2000" />
-                                                </Link>
-                                                <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>design your custom packaging now!</p>
-                                                {/* </a> */}
+                                                    <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>design your custom packaging now!</p>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 ))}
                             </div>
@@ -119,6 +128,56 @@ function Product() {
                     ))}
                 </Box>
             </div>
+            <div className="modaldata">
+                <Modal open={open} onClose={handleClose}>
+                    <Box className="modal-box" sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        boxShadow: 24,
+                        p: 4
+                    }}>
+                        {selectedProduct && (
+                            <div className="container">
+                                <div className="heading-section">
+                                    <h2>{selectedProduct.MainName}</h2>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="product-dtl">
+                                            <div className="product-info">
+                                                <div className="product-name">{selectedProduct.MainName}</div>
+                                            </div>
+                                            <p>{selectedProduct.ProductDetails}</p>
+                                            {/* Name Input Field */}
+
+
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="item text-center">
+                                            {/* <img height={100} width={100} src={selectedProduct.MainImage} alt={selectedProduct.MainName} className='img-fluid' /> */}
+                                            {selectedProduct.SubImageData.map((item, i) => {
+                                                return (
+                                                    <div key={i}>
+                                                        <img src={item} alt="" width={100} height={100} className='mx-3' />
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+
+                                    </div>
+                                    <div className="col-12">
+                                        <ProductDesignBox />
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </Box>
+                </Modal>
+            </div>
+            {/* Modal Section */}
         </>
     );
 }

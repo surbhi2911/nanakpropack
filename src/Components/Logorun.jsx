@@ -75,7 +75,6 @@ function Logorun() {
                         <div className="my-1 ">
                             <Slider {...settings}  >
                                 {carddata?.map((x, i) => {
-                                    console.log(x);
                                     return (
                                         <>
                                             <div className="bg-light m-3" style={{ height: '140px' }}>
