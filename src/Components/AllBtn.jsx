@@ -1,7 +1,7 @@
 import React from 'react'
 function AllBtn({ text }) {
     return (
-        <button className="bn-32 bn32">
+        <button className="bn-32 bn32 w-auto">
             {text}
             {/* <span><AiOutlineDoubleRight className="FaLeftLongd" /> <h1></h1></span> */}
         </button>

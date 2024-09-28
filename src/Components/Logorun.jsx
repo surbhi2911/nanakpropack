@@ -12,10 +12,10 @@ function Logorun() {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
-        autoplaySpeed: 2500,
-        swipe: false, 
-        arrows: false, 
-        pauseOnHover: false, 
+        autoplaySpeed: 3000,
+        swipe: false,
+        arrows: false,
+        pauseOnHover: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -73,23 +73,23 @@ function Logorun() {
                             <TitleHeadLight textb2='Trusted by' lineb2='the world’s leading organizations' />
                         </div>
                         <div className="my-1">
-                            <Slider {...settings}  >
+                            <Slider {...settings} className="">
                                 {carddata?.map((x, i) => {
                                     return (
+                                        <div className="mx-3">
+                                            <div className="m-3 hgcx bg-light" style={{ height: '140px' }} key={i}>
+                                                <div
+                                                    className="p-3 p-lg-5 "
+                                                >
+                                                    <img
+                                                        src={x.img}
+                                                        alt=""
+                                                        className="img-fluid h-100 w-100 object-fit-cover  "
 
-                                        <div className="bg-light m-3" style={{ height: '140px' }} key={i}>
-                                            <div
-                                                className="p-3 p-lg-5 "
-                                            >
-                                                <img
-                                                    src={x.img}
-                                                    alt=""
-                                                    className="img-fluid h-100 w-100 object-fit-cover  "
-
-                                                />
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
-
                                     );
                                 })}
                             </Slider>

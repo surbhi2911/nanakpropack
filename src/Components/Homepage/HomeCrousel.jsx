@@ -5,12 +5,35 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Slider from 'react-slick';
 import { FaArrowDownLong } from 'react-icons/fa6';
-import { Box } from 'lucide-react';
-import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
-import { Link } from 'react-router-dom';
 import { ProductList } from '../../ProductList';
 
 
+// const data = [
+//     {
+//         h1: 'Mono Carton',
+//         h6: "efficient product packaging.",
+//         img: require('./Assets/Images/PNG Images/Laminated_Printed_Carton3-removebg-preview.png'),
+//         bg: '#d1d3ca'
+//     },
+//     {
+//         h1: 'Cake Boxes',
+//         h6: 'cake boxes for transport',
+//         img: require('../../Assets/Images/PNG Images/large-cake-boxes-removebg-preview.png'),
+//          bg: '#d1d3ca'
+//     },
+//     {
+//         h1: 'Corrugated Sheet',
+//         h6: 'versatile packaging needs',
+//         img: require('../../Assets/Images/Corrugated sheets/corrugated sheet1.jpg'),
+
+//     },
+//     {
+//         h1: 'Duplex',
+//         h6: 'superior packaging strength',
+//         img: require('../../Assets/Images/PNG Images/duplex3-removebg-preview.png'),
+//     }
+
+// ]
 function App() {
     var settings = {
         dots: false,
@@ -20,7 +43,7 @@ function App() {
         initialSlide: 0,
         autoplay: true,
         swipe: true,
-        // speed: 30000000,
+        speed: 30000000,
         arrows: false,
         pauseOnHover: false,
         responsive: [
@@ -81,28 +104,30 @@ function App() {
                                     {ProductList.map((Item, index) => {
                                         // const [firstWord, secondWord] = Item.h1.split(' ');
                                         return (
-                                            <div key={index} className='my-3'>
-                                                <div className='mx-5' style={{ background: `${Item.bg}`, border: '2px solid black', boxShadow: "rgb(48, 67, 88) 0px 30px 40px -5px" }}>
+                                            <div key={index} className='mb-5'>
+                                                {/* <div className='bg-light mx-5'>
                                                     <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '200px', width: 'auto' }} />
-                                                </div>
-                                                {/* <div className={`bg-light text-dark m-4`} style={{ backgroundImage: `url(${Item.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-                                                    <div>
-                                                        <div className="mx-4 shadow-lg py-4 pb-5" style={{ background: '#303849de', position: 'relative', bottom: '-50px' }}>
-                                                            <div className="pb-3" style={{ margin: 'auto' }}>
-                                                                <div style={{ fontSize: '27px' }} className='text-dark fw-bold'>
-                                                                    <span style={{ color: '#fff' }}>{firstWord}</span>{' '}
-                                                                    <span className='orangecolor'>{secondWord}</span>
-                                                                </div>
-                                                                <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div> */}
+                                                <div className={`text-dark m-4`} style={{
+                                                    backgroundImage: `url(${Item.img})`,
+                                                    backgroundColor: `${Item.bg}`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundRepeat: 'no-repeat',
+                                                    backgroundPosition: 'center',
+
+                                                    WebkitBackdropFilter: 'blur(10px)'
+
+                                                }}>
+                                                    <div style={{ backdropFilter: 'blur(2px)' }}>
+                                                        <div className="shadow-lg py-5" style={{ background: 'rgb(48 56 73 / 63%)' }}>
+                                                            <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '120px', width: 'auto' }} />
+                                                        </div>
+                                                        <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
-
-
                                 </Slider>
                             </div>
                         </div>

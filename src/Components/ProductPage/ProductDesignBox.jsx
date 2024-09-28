@@ -123,11 +123,11 @@ function ProductDesignBox() {
                             required
                         >
                             <option value="">Select box type</option>
-                            <option value="Corrugated Box">Corrugated Box</option>
-                            <option value="Die-Cut Box">Die-Cut Box</option>
-                            <option value="Rigid Box">Rigid Box</option>
-                            <option value="Folding Carton">Folding Carton</option>
-                            <option value="Laminated Printed Box">Laminated Printed Box</option>
+                            <option value="Corrugated Box">UNIVERSAL</option>
+                            <option value="Die-Cut Box">TOP BOTTOM</option>
+                            <option value="Rigid Box">TUCK IN FLAP</option>
+                            <option value="Folding Carton">BOTTOM LOCK</option>
+                            <option value="Laminated Printed Box">PIZZA/LAPTOP</option>
                         </select>
                     </div>
 
