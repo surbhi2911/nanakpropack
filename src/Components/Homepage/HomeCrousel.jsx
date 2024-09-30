@@ -43,7 +43,7 @@ function App() {
         initialSlide: 0,
         autoplay: true,
         swipe: true,
-        speed: 30000000,
+        speed: 2500,
         arrows: false,
         pauseOnHover: false,
         responsive: [
