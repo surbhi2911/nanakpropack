@@ -842,21 +842,67 @@
     }
 }
 
+.marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    flex-shrink: 0;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.font_stroke {
+    color: rgba(255, 255, 255, 0) !important;
+    -webkit-text-stroke-width: 1.9px !important;
+    stroke-width: 1px !important;
+    -webkit-text-stroke-color: var(--orange--) !important;
+    font-size: 100px !important;
+    text-transform: capitalize !important;
+}
+
 .homeform .css-1eed5fa-MuiInputBase-root-MuiInput-root::after {
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid white !important;
 }
 
 .homeform .css-1eed5fa-MuiInputBase-root-MuiInput-root::before {
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid white !important;
 }
 
 .homeform .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: black !important;
+    color: white !important;
 }
 
-.homeform {
-    backdrop-filter: blur(1px);
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+.homeform .css-batk84-MuiInputBase-root-MuiFilledInput-root {
+    background: rgba(0, 0, 0, 0.48) !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.homeform .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+    color: #fff;
+    opacity: 1;
+}
+
+.homeform .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: white !important;
+}
+
+.homeform .css-batk84-MuiInputBase-root-MuiFilledInput-root::after {
+    border-bottom: 2px solid white !important;
 }
 
 
