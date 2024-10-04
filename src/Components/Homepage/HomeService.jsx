@@ -59,7 +59,7 @@ function HomeService() {
     return (
         <>
             <div className="py-5 overflow-x-hidden">
-                <div className='container px-0 px-lg-5 mt-5 py-5'>
+                <div className='container px-4 px-lg-5 mt-5 py-5'>
                     <div className='row justify-content-center'>
                         <div className="col-md-6 col-11" data-aos='fade-up' data-aos-duration='1200'>
                             <TitleHeadLight textb1='Our' textb2='services' lineb1='services' lineb2='That we provide' />

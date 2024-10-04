@@ -337,6 +337,13 @@ p {
     overflow: hidden;
 }
 
+@media screen and (max-width:576px) {
+
+    .mission-section {
+        padding: 0px;
+    }
+}
+
 /* Background pattern */
 .mission-section::before {
     content: "";

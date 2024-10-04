@@ -87,7 +87,7 @@ function HomeWhyUs() {
     return (
         <>
             <div className='HomeWhyus text-light py-5 overflow-x-hidden'>
-                <div className='container-lg mt-5 '>
+                <div className='container ps-lg-0 ps-4 mt-5 '>
                     <div className='row justify-content-start'>
                         <div className='col-lg-6 col-sm-11 col-11' data-aos='fade-up' data-aos-duration='1200'>
                             <TitleHead text1='why' text2='Choose Us' line1='Unmatched Quality, Innovative' line2='Packaging Solutions' />

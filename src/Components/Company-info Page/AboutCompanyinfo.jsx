@@ -27,7 +27,7 @@ const features = [
 ];
 function AboutCompanyinfo() {
     return (
-        <div>
+        <div className='overflow-y-hidden'>
             <div className='my-5'>
                 <div className="container">
                     <div className='row d-flex justify-content-center align-items-center align-content-center'>
