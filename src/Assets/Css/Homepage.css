@@ -887,7 +887,7 @@
 }
 
 .homeform .css-batk84-MuiInputBase-root-MuiFilledInput-root {
-    background: rgba(0, 0, 0, 0.48) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
@@ -903,6 +903,11 @@
 
 .homeform .css-batk84-MuiInputBase-root-MuiFilledInput-root::after {
     border-bottom: 2px solid white !important;
+}
+
+.homeform .css-10botns-MuiInputBase-input-MuiFilledInput-input,
+.homeform .css-o943dk-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
 }
 
 
