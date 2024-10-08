@@ -85,36 +85,38 @@ function Header() {
             <div className='text-light d-lg-block d-none pb-5 pt-2 headerNana'>
 
                 <div id="topbar" className="col-lg-12" >
-                    <span id="topbarin">
-                        <span className="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
-                            #34-strreet A Newyork Lorem ipsum dolor sit amet.
-                        </span>
-                        <span className="topbarcontent">
-                            +91 70483 13227
-                        </span>
-                    </span>
-                    <span id="topbarin1">
-                        <a href="">
+                    <div className="container">
+                        <span id="topbarin">
                             <span className="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
-                                <FaFacebook />
+                                #34-strreet A Newyork Lorem ipsum dolor sit amet.
                             </span>
-                        </a>
-                        <a href="">
                             <span className="topbarcontent">
-                                <FaInstagram />
+                                +91 70483 13227
                             </span>
-                        </a>
-                        <a href="">
-                            <span className="topbarcontent">
-                                <FaTwitter />
-                            </span>
-                        </a>
-                        <a href="">
-                            <span className="topbarcontent">
-                                <FaLinkedin />
-                            </span>
-                        </a>
-                    </span>
+                        </span>
+                        <span id="topbarin1">
+                            <a href="">
+                                <span className="topbarcontent" style={{ borderLeft: 'solid 1px lightgray' }}>
+                                    <FaFacebook />
+                                </span>
+                            </a>
+                            <a href="">
+                                <span className="topbarcontent">
+                                    <FaInstagram />
+                                </span>
+                            </a>
+                            <a href="">
+                                <span className="topbarcontent">
+                                    <FaTwitter />
+                                </span>
+                            </a>
+                            <a href="">
+                                <span className="topbarcontent">
+                                    <FaLinkedin />
+                                </span>
+                            </a>
+                        </span>
+                    </div>
                 </div>
             </div>
             {/* TOP-LINE End */}

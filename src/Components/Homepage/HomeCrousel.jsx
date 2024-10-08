@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import Slider from 'react-slick';
 import { FaArrowDownLong } from 'react-icons/fa6';
 import { ProductList } from '../../ProductList';
+import { Link } from 'react-router-dom';
 
 
 // const data = [
@@ -108,23 +109,25 @@ function App() {
                                                 {/* <div className='bg-light mx-5'>
                                                     <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '200px', width: 'auto' }} />
                                                 </div> */}
-                                                <div className={`text-dark m-4`} style={{
-                                                    backgroundImage: `url(${Item.img})`,
-                                                    backgroundColor: `${Item.bg}`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundRepeat: 'no-repeat',
-                                                    backgroundPosition: 'center',
+                                                <Link to={'/product'}>
+                                                    <div className={`text-dark m-4`} style={{
+                                                        backgroundImage: `url(${Item.img})`,
+                                                        backgroundColor: `${Item.bg}`,
+                                                        backgroundSize: 'contain',
+                                                        backgroundRepeat: 'no-repeat',
+                                                        backgroundPosition: 'center',
 
-                                                    WebkitBackdropFilter: 'blur(10px)'
+                                                        WebkitBackdropFilter: 'blur(10px)'
 
-                                                }}>
-                                                    <div style={{ backdropFilter: 'blur(2px)' }}>
-                                                        <div className="shadow-lg mx-5 py-5" style={{ background: 'rgb(48 56 73 / 63%)', position: "relative", top: '45px',border:'7px groove white' }}>
-                                                            <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '120px', width: 'auto' }} />
+                                                    }}>
+                                                        <div style={{ backdropFilter: 'blur(2px)' }}>
+                                                            <div className="shadow-lg mx-5 py-5" style={{ background: 'rgb(48 56 73 / 63%)', position: "relative", top: '45px', border: '7px groove white' }}>
+                                                                <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '120px', width: 'auto' }} />
+                                                            </div>
+                                                            <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
                                                         </div>
-                                                        <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </div>
                                         );
                                     })}
