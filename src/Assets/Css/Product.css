@@ -19,7 +19,8 @@
 }
 
 .bg_black {
-    background: var(--black--);
+    background: var(--lemon--);
+    color: var(--orange--);
 }
 
 .unique-box-shadow {
@@ -132,7 +133,7 @@
 .qtyplus {
     width: 40px;
     height: 40px;
-    background-color: black;
+    background-color: var(--orange--);
     color: #ffffff;
     text-align: center;
     line-height: 40px;
@@ -145,7 +146,9 @@
 
 .qtyminus:hover,
 .qtyplus:hover {
-    background-color: var(--orange--);
+    background-color: var(--lemon--);
+    color: black;
+    border: 1px solid var(--orange--);
     /* Adjust as needed or use a darker shade */
 }
 

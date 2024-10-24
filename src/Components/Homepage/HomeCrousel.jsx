@@ -42,7 +42,7 @@ function App() {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        // autoplay: true,
+        autoplay: true,
         swipe: true,
         speed: 2500,
         arrows: false,
@@ -116,13 +116,10 @@ function App() {
                                                         backgroundSize: 'contain',
                                                         backgroundRepeat: 'no-repeat',
                                                         backgroundPosition: 'center',
-
-                                                        WebkitBackdropFilter: 'blur(10px)'
-
                                                     }}>
-                                                        <div style={{ backdropFilter: 'blur(2px)' }}>
+                                                        <div style={{ backdropFilter: 'blur(10px)' }}>
                                                             <div className="shadow-lg mx-5 py-5" style={{ background: 'rgb(48 56 73 / 63%)', position: "relative", top: '45px', border: '7px groove white' }}>
-                                                                <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '120px', width: 'auto' }} />
+                                                                <img src={Item.img} alt="" className='img-fluid mx-auto' style={{ height: '120px', width: 'auto', filter: "drop-shadow(10px 10px 10px rgba(0, 0, 0, 1))" }} />
                                                             </div>
                                                             <div style={{ fontSize: '20px' }} className='orangecolor fw-semibold'>{Item.h6}</div>
                                                         </div>

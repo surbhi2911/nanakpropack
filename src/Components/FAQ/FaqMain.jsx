@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function FaqMain() {
     return (
-        <div className='Mainsec1'><div style={{ marginTop: '-42px' }} >
+        <div className='Mainsec1'><div style={{ marginTop: '-62px' }} >
             <header className="header ">
                 <div className="my-4">
                     <h1>FAQs</h1>

@@ -72,11 +72,11 @@ function HomeProduct() {
                             <div className="product-box" key={index} data-aos='' data-aos-duration='1200' data-aos-delay='1000'>
                                 <div className="product-item mx-3 text-decoration-none ">
                                     <div className="product-item-image">
-                                        <img src={Item.img} alt={`Product`} style={{ height: '120px', width: "120px", objectFit: 'fill', margin: 'auto' }} />
+                                        <img src={Item.img} alt={`Product`} style={{ height: '150px', width: "150px", objectFit: 'cover', margin: 'auto' }} />
                                         {/* <div className="product-item-image-hover"></div> */}
                                     </div>
                                     <div className="product-item-content" data-aos='fade'>
-                                        <div className="product-item-category">
+                                        {/* <div className="product-item-category">
                                             Item {index}
                                         </div>
                                         <div className="product-item-title fs-6">
@@ -84,11 +84,14 @@ function HomeProduct() {
                                         </div>
                                         <div className="product-item-price">
                                             {Item.price}
-                                        </div>
+                                        </div> */}
                                         <div className="button-pill">
-                                            <a href="/Product">
-                                                <span>view</span>
-                                            </a>
+                                            {/* <a href="/Product">
+                                                <span> {Item.heading2}</span>
+                                            </a> */}
+                                            <span className='product-item-title fs-6'>
+                                                {Item.heading2}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>

@@ -11,7 +11,7 @@ import AboutCompanyinfo from './AboutCompanyinfo'
 import IndustriesInfo from './IndustriesInfo'
 
 function CompanyInfo() {
-    return (    
+    return (
         <>
             <CompanyInfoHome />
             <AboutCompanyinfo />
@@ -24,19 +24,19 @@ function CompanyInfo() {
 
                     <div className="info-grid">
                         <div className="info-card" data-aos="fade-left" data-aos-duration="2000">
-                            <Package className='orangecolor my-2' size={24} /><h2>Custom Packaging</h2>
+                            <Package className='lemon my-2' size={24} /><h2 className='lemon fw-bold'>Custom Packaging</h2>
                             <p>We create tailored packaging solutions that perfectly fit your product needs while minimizing environmental impact.</p>
                         </div>
                         <div className="info-card" data-aos="fade-up" data-aos-duration="2000">
-                            <Leaf className='orangecolor my-2' size={24} /><h2>Eco-Friendly Materials</h2>
+                            <Leaf className='lemon my-2' size={24} /><h2 className='lemon fw-bold'>Eco-Friendly Materials</h2>
                             <p>Our packaging is made from sustainable, biodegradable materials that reduce your carbon footprint.</p>
                         </div>
                         <div className="info-card" data-aos="fade-down" data-aos-duration="2000">
-                            <Recycle className='orangecolor my-2' size={24} /><h2>Circular Economy</h2>
+                            <Recycle className='lemon my-2' size={24} /><h2 className='lemon fw-bold'>Circular Economy</h2>
                             <p>We design our packaging with recyclability in mind, supporting a circular economy and reducing waste.</p>
                         </div>
                         <div className="info-card" data-aos="fade-right" data-aos-duration="2000">
-                            <Award className='orangecolor my-2' size={24} /><h2>Award-Winning Designs</h2>
+                            <Award className='lemon my-2' size={24} /><h2 className='lemon fw-bold'>Award-Winning Designs</h2>
                             <p>Our innovative packaging solutions have won multiple industry awards for sustainability and design excellence.</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ function CompanyInfo() {
                 <section className="productivity-section">
                     <div className="container">
                         <div className="content row justify-content-center">
-                            <div className="image-content text-center col-md-6 col-11 player" data-aos="fade-right"data-aos-duration='1500'>
+                            <div className="image-content text-center col-md-6 col-11 player" data-aos="fade-right" data-aos-duration='1500'>
                                 {/* <img src='https://img.freepik.com/free-photo/medium-shot-young-people-with-reviews_23-2149394417.jpg?w=900&t=st=1725945010~exp=1725945610~hmac=4a31e142e7309b30ed4cec5f2fb83f746d476ca534ee84f1dc30397aa4f464c1' alt="Team collaborating on a project" className='img-fluid' /> */}
                                 <Player
                                     autoplay

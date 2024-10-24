@@ -11,7 +11,7 @@ function Footer() {
                 <div className='container'>
                     <div className='row justify-content-center'>
                         <div className='col-lg-3 col-sm-6 mt-3 col-10' data-aos="fade" data-aos-duration="2000">
-                            <img src={require('../Assets/Images/nanak_LOGO-removebg.png')} alt="" className='img-fluid border-end border-4' />
+                            <img src={require('../Assets/Images/Nanak _Main Logo.jpg')} alt="" className='img-fluid border-end border-4' />
 
                         </div>
                         <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10' data-aos="fade" data-aos-duration="2000">
@@ -21,7 +21,7 @@ function Footer() {
                             <p>Providing innovative and sustainable packaging solutions. Contact us today to elevate your brand with quality packaging.</p>
                         </div>
                         <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10 ps-md-5' data-aos="fade" data-aos-duration="2000">
-                            <h3 className='orangecolor'>
+                            <h3 className='lemon'>
                                 Quick Links
                             </h3>
                             <div className="my-3 "><Link className='footerlinks text-decoration-none fs-6' style={{ verticalAlign: 'center' }} to={'/'}><FaHome className='fs-4 me-2' /> Home</Link></div>
@@ -30,15 +30,12 @@ function Footer() {
                             <div className="my-3 "><Link className='footerlinks text-decoration-none fs-6' style={{ verticalAlign: 'center' }} to={'/Product'}><AiFillProduct className='fs-4 me-2' /> Product</Link></div>
                         </div>
                         <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10' data-aos="fade" data-aos-duration="2000">
-                            <h3 className='orangecolor'>Social Connections</h3>
-                            <div className='my-4'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, consequuntur?
-                            </div>
-                            <div className='d-flex'>
-                                <div className='me-3 Footericons'><FaFacebook className='m-2 fs-5' /></div>
-                                <div className='me-3 Footericons'><FaInstagram className='m-2 fs-5' /></div>
-                                <div className='me-3 Footericons'><FaTwitter className='m-2 fs-5' /></div>
-                                <div className='me-3 Footericons'><FaLinkedin className='m-2 fs-5' /></div>
+                            <h3 className='lemon'>Social Connections</h3>
+                            <div className='d-flex mt-3 flex-wrap'>
+                                <div className='w-25 m-3 Footericons'><FaFacebook className='m-2 fs-4' /></div>
+                                <div className='w-25 m-3 Footericons'><FaInstagram className='m-2 fs-4' /></div>
+                                <div className='w-25 m-3 Footericons'><FaTwitter className='m-2 fs-4' /></div>
+                                <div className='w-25 m-3 Footericons'><FaLinkedin className='m-2 fs-4' /></div>
                             </div>
                         </div>
                     </div>

@@ -103,7 +103,7 @@ function HomeWhyUs() {
                                         <div className='fw-light display-4 my-2'>
                                             {x.icon}
                                         </div>
-                                        <h2 className='fw-light fs-4 my-2 orangecolor' style={{ textTransform: "capitalize" }}>{x.name} <span className='fw-bold '>{x.bname}</span></h2>
+                                        <h2 className='fw-light fs-4 my-2 lemon' style={{ textTransform: "capitalize" }}>{x.name} <span className='fw-bold '>{x.bname}</span></h2>
                                         <p className='my-2'>{x.pera}</p>
                                     </div>
 

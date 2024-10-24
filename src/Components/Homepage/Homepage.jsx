@@ -14,7 +14,7 @@ import HomeDesignBox from './HomeDesignBox'
 function Homepage() {
     return (
         <>
-            <div className="overflow-x-hidden" style={{ marginTop: '-43px' }}>
+            <div className="overflow-x-hidden" style={{ marginTop: '-62px' }}>
                 <HomeCrousel />
                 <HomeAbout />
                 <HomeWhyUs />

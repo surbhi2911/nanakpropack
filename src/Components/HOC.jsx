@@ -9,7 +9,7 @@ function HOC(Component) {
             <>
                 <Header />
                 <Component />
-                <Logorun />
+                {/* <Logorun /> */}
                 <Footer />
             </>
         )

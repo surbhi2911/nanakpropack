@@ -100,54 +100,6 @@ export const IndustryData = [
         para: "Our durable packaging solutions for the automotive and industrial sectors offer protection and sustainability for heavy-duty products."
     },
     {
-        Id: "Agriculture",
-        title: "Agriculture",
-        subtitle: "Sustainable Solutions for the Agriculture Industry",
-        icon: <Leaf size={25} className='text-light' />,
-        img: "https://2.wlimg.com/product_images/bc-full/2022/8/5204208/agriculture-packaging-pouch-1659504834-6475077.jpeg",
-        content: (
-            <ul>
-                <li>Biodegradable packaging solutions</li>
-                <li>Moisture-resistant materials for produce</li>
-                <li>Durable packaging for bulk shipping</li>
-                <li>Customizable packaging for farm products</li>
-            </ul>
-        ),
-        para: "We provide eco-friendly, biodegradable packaging solutions for agriculture, protecting farm products while maintaining sustainability."
-    },
-    {
-        Id: "Luxury-Goods",
-        title: "Luxury Goods",
-        subtitle: "Elegant Packaging for High-End Brands",
-        icon: <Diamond size={25} className='text-light' />,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfl-xK7KTSgGuNRC4yAN9_KeqXsaO-A7GZQ&s",
-        content: (
-            <ul>
-                <li>Elegant and premium packaging designs</li>
-                <li>Customizable branding for high-end items</li>
-                <li>Specialty materials for a luxurious feel</li>
-                <li>Secure packaging for delicate goods</li>
-            </ul>
-        ),
-        para: "Our luxury packaging solutions offer premium, elegant designs that enhance the prestige and protection of high-end products."
-    },
-    {
-        Id: "Education-Publishing",
-        title: "Education & Publishing",
-        subtitle: "Creative Packaging for Educational Products",
-        icon: <BookOpen size={25} className='text-light' />,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26zUa3T3V0qc9z89_T8O3PCeYmxBZPWhf1w&s",
-        content: (
-            <ul>
-                <li>Durable packaging for books and stationery</li>
-                <li>Custom designs for educational kits</li>
-                <li>Eco-friendly options for paper-based products</li>
-                <li>Secure packaging for print media</li>
-            </ul>
-        ),
-        para: "We provide durable, creative, and eco-friendly packaging solutions for the education and publishing sectors, ensuring product safety."
-    },
-    {
         Id: "Sports-Outdoors",
         title: "Sports & Outdoors",
         subtitle: "Rugged Packaging for Outdoor and Sports Gear",

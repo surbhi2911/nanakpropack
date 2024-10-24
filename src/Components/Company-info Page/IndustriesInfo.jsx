@@ -18,7 +18,7 @@ function IndustriesInfo() {
                     {IndustryData.map((item, index) => {
                         return (
                             <>
-                                <div className='col-lg-2 col-md-3 col-sm-4 col-6 p-2 text-center' data-aos="flip-left" data-aos-duration="1500">
+                                <div className='col-lg-2 col-md-3 col-sm-4 col-6 p-2 m-1 text-center' data-aos="flip-left" data-aos-duration="1500">
                                     <Link to={`/Contactus/${item.Id}`} className='text-center text-decoration-none'>
                                         <div className="darksoul-card2 mx-auto">
                                             <div className="circle2"></div>

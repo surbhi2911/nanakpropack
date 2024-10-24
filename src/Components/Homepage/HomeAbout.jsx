@@ -9,7 +9,7 @@ function HomeAbout() {
             <div className='container-lg my-5 pb-5'>
                 <div className='row justify-content-center align-items-center'>
                     <div className='col-lg-6 col-6 m-lg-0 m-5 px-0 down-arrow2' data-aos='fade' data-aos-duration='1000' >
-                        <div className="mx-auto mb-md-0 mb-sm-5 mb-0 h-100">
+                        <div className="mx-auto mb-md-0 mb-sm-5 mb-0 h-100 ms-lg-5 ps-lg-4">
                             <div className="gallery imageback ms-md-5 ps-md-5 ps-0 ms-5">
                                 <img src={require('../../Assets/Images/box images/attachment_100298252 (1).jpg')} alt="a house on a mountain" />
                                 <img src={require('../../Assets/Images/box images/attachment_50162265.jpg')} alt="sime pink flowers" />

@@ -5,7 +5,7 @@ function TitleHead(props) {
         <>
             <div className='col-sm-11 col-11 overflow-x-hidden'>
                 <div className="two text-light">
-                    <h1 className='h1' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500'>{props.text1} <span className='orangecolor'>{props.text2}</span>
+                    <h1 className='h1' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500'>{props.text1} <span className='lemon'>{props.text2}</span>
                         <span className='span' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500'>{props.line1} <span className='fw-semibold span' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500'>{props.line2}</span></span>
                     </h1>
                 </div>

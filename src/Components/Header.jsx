@@ -25,10 +25,10 @@ const pages = [
         page: 'Products',
         link: '/Product'
     },
-    {
-        page: 'Portfolio',
-        link: '/PortFolio'
-    },
+    // {
+    //     page: 'Portfolio',
+    //     link: '/PortFolio'
+    // },
     {
         page: 'Contact Us',
         link: '/Contactus'
@@ -130,7 +130,7 @@ function Header() {
                                 variant="h6"
                                 noWrap
                                 component="a"
-                                href="#app-bar-with-responsive-menu"
+                                href="/"
                                 sx={{
                                     mr: 2,
                                     display: { xs: 'none', md: 'flex' },
@@ -140,7 +140,7 @@ function Header() {
                                     textDecoration: 'none',
                                 }}
                             >
-                                <img src={require('../Assets/Images/nanak_LOGO-removebg.png')} alt="" className='ms-3 m-2' style={{ width: '150px' }} />
+                                <img src={require('../Assets/Images/Nanak__Main_Logo-removebg-preview.png')} alt="" className='ms-3' style={{ width: '150px' }} />
                             </Typography>
 
                             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -228,17 +228,27 @@ function Header() {
                                             position: 'relative',
                                         }}
                                     >
-                                        <div className="text-center">
+                                        <div className="" style={{ position: 'relative', display: 'inline-block' }}>
                                             <QRCodeCanvas
                                                 value={qrData}
                                                 level={"H"}
                                                 style={{
-                                                    height: '60%',
-                                                    width: '60%',
+                                                    height: '100%',
+                                                    width: '100%',
                                                     padding: '5px',
                                                     border: '5px solid var(--orange--)',
-                                                    // borderRadius: '12px',
                                                     backgroundColor: '#f8f9fa',
+                                                }}
+                                            />
+                                            <img
+                                                src={require('../Assets/Images/Nanak _Main Logo.jpg')}
+                                                alt="logo"
+                                                style={{
+                                                    position: 'absolute',
+                                                    top: '50%',
+                                                    left: '50%',
+                                                    transform: 'translate(-50%, -50%)',
+                                                    height: '64px',
                                                 }}
                                             />
                                         </div>
@@ -247,7 +257,7 @@ function Header() {
                                             <Link
                                                 to={"tel:70483113227"}
                                                 className="nav-link navlinkhoverheader fw-bold text-decoration-none"
-                                                style={{ textAlign: 'center' }}
+                                                
                                             >
                                                 <span className="fs-4">
                                                     <img

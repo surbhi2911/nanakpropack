@@ -25,7 +25,7 @@ const HomeDesignBox = () => {
                 <div className="container my-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
                     <div className="row">
                         <div className="col-lg-5 col-md-7 col-sm-9 col-11 m-auto" data-aos="fade-right" data-aos-duration='1500'>
-                            <h1 className="display-4 fw-bold orangecolor text-capitalize my-5" style={{ textShadow: '1px 1px black' }}><span className="text-light" >Custom packaging</span> designed to <span className="text-light" >fit your business</span> </h1>
+                            <h1 className="display-4 fw-bold lemon text-capitalize my-5" style={{ textShadow: '1px 1px black' }}><span className="text-light" >Custom packaging</span> designed to <span className="text-light" >fit your business</span> </h1>
                             <p className="fs-6 text-light">Explore, design and order sustainable packaging your customers will love</p>
                             <Link to="/Product"><div className="fs-5"><AllBtn text="Design Your Box" /></div></Link>
                         </div>

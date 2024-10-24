@@ -6,13 +6,12 @@ function FaqAccordian() {
     return (
         <>
             <div className='container'>
-                <div className='row justify-content-center align-items-end'>
-                    <div className='col-lg-4 col-11'>
+                <div className='row justify-content-center align-items-end mb-5'>
+                    {/* <div className='col-lg-4 col-11'>
                         <div className="row align-items-center">
                             <div className='display-4 fw-normal col-lg-12 col-sm-6 py-3'>
 
                                 <TitleHeadLight textb1='Quick' textb2='Answers' lineb1='Answers' lineb2='to your packaging questions' />
-                                {/* <p className='text-dark fw-normal lh-lg' style={{ fontFamily: 'serif' }}>Lorem ipsum dolor sit amet conse adipisicing elit. Hic, praesentium? Lorem ipsum dolor sit, amet conser adipisicing elit. Aperiam, repre henderit. Lorem ipsum dolor sit, amet consectetur adipisicing.</p> */}
                             </div>
                             <div className='col-lg-12 col-sm-6' data-aos="zoom-in" data-aos-duration='1500'>
                                 <div className="col-12 text-center">
@@ -20,11 +19,14 @@ function FaqAccordian() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-8 col-11" data-aos="fade-left"
+                    </div> */}
+                    <div className="col-lg-10 col-11"
                         data-aos-anchor="#example-anchor"
                         data-aos-offset="1500"
                         data-aos-duration="1500">
+                        <div className='display-4 fw-normal col-lg-12 col-sm-6 py-3'>
+                            <TitleHeadLight textb1='Quick' textb2='Answers' lineb1='Answers' lineb2='to your packaging questions' />
+                        </div>
                         <div className="accordion" id="accordionExample">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingOne">

@@ -18,7 +18,7 @@ function MissionInfo() {
                                 style={{ borderRadius: "12% 88% 16% 84% / 80% 8% 92% 20%" }}>
                                 <div className="mb-4" >
                                     <div className="p-4 my-2 mx-auto rounded-circle" style={{ width: '40%', backgroundColor: 'var(--orange--)' }}>
-                                        <TbTargetArrow strokeWidth={1.75} className='text-dark fs-2 text-center' />
+                                        <TbTargetArrow strokeWidth={1.75} className='text-light fs-2 text-center' />
                                     </div>
                                     <h1 className='text-dark fs-3 pt-2'>Our Mission</h1>
                                     <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ex?</p>
@@ -30,7 +30,7 @@ function MissionInfo() {
                                 style={{ borderRadius: "12% 88% 16% 84% / 80% 8% 92% 20%" }}>
                                 <div className="mb-4">
                                     <div className="p-4 my-2 mx-auto rounded-circle" style={{ width: '40%', backgroundColor: 'var(--orange--)' }}>
-                                        <GiBrassEye className='text-dark text-center fs-2' />
+                                        <GiBrassEye className='text-light text-center fs-2' />
                                     </div>
                                     <h1 className='text-dark fs-3 pt-2'>Our Vision</h1>
                                     <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ex?</p>

@@ -55,7 +55,7 @@ function AboutCompanyinfo() {
                                             {feature.icon}
                                         </div>
                                         <div className='text-white ms-3'>
-                                            <h3 className='orangecolor fs-3'>{feature.title}</h3>
+                                            <h3 className='lemon fw-bold fs-3'>{feature.title}</h3>
                                             <div>{feature.description}</div>
                                         </div>
                                     </div>

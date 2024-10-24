@@ -20,7 +20,7 @@ function Data() {
             <div>
                 <div className='container my-5'>
                     <div className='row align-items-center justify-content-center align-content-between'>
-                        <div className='col-lg-4 col-11 h-100 bg-dark  rounded-5 px-4 py-5'>
+                        <div className='col-lg-4 col-11 h-100 rounded-5 px-4 py-5' style={{ background: 'var(--orange--)' }}>
                             <h1 className='text-light ps-3'>{product.title}</h1>
                             <p className='py-3 text-light'>{product.content}</p>
                         </div>
@@ -35,7 +35,7 @@ function Data() {
                             </div>
                         </div>
                         <div className='col-lg-3 col-md-4 col-11'>
-                            <p className='bg-dark text-light py-5 px-3 rounded-5'>{product.para}</p>
+                            <p className='text-light py-5 px-3 rounded-5' style={{ background: 'var(--orange--)' }}>{product.para}</p>
                         </div>
                     </div>
                 </div>

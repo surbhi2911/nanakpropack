@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../../Assets/Css/Product.css';
 import HOC from '../HOC';
-import { TitleHead } from '../TitleHead';
-import { Tabs, Tab, Box, Modal, Select, MenuItem, FormControl, InputLabel, TextField } from '@mui/material';
+import { TitleHead, TitleHeadLight } from '../TitleHead';
+import { Tabs, Tab, Box, Modal } from '@mui/material';
 import { departments } from './departments';
 import AllBtn from '../AllBtn';
 import ProductsMain from '../PortfolioPage/ProductsMain';
@@ -56,14 +56,15 @@ function Product() {
                                 justifyContent: 'center',
                             },
                             '& .MuiTab-root': {
-                                backgroundColor: 'var(--black--)',
+                                backgroundColor: 'var(--orange--)',
                                 color: 'white',
                                 margin: '10px',
                                 transition: 'all 0.7s',
                             },
                             '& .Mui-selected': {
                                 color: 'black !important',
-                                backgroundColor: 'var(--orange--)',
+                                backgroundColor: 'var(--lemon--)',
+                                border: '2px solid var(--orange--)'
                             },
                             '& .MuiTabs-indicator': {
                                 display: 'none',
@@ -109,11 +110,11 @@ function Product() {
                                                     ))}
                                                 </div>
                                             </div>
-                                            <div className='col-lg-6 col-md-12 col-12 lh-lg custom-border bg_black px-lg-5 px-md-4 px-sm-3 px-1 border border-5 border-start-5 border-end-0 border-top-0 border-bottom-0 py-2 unique-box-shadow' data-aos="fade-left" data-aos-duration="2000">
+                                            <div className='col-lg-6 col-md-12 col-12 lh-lg custom-border border border-2 border-dark px-lg-5 px-md-4 px-sm-3 px-1 border border-5 border-start-5 border-end-0 border-top-0 border-bottom-0 py-2 unique-box-shadow' data-aos="fade-left" data-aos-duration="2000">
                                                 <div className="py-3 overflow-x-hidden  my-4">
-                                                    <TitleHead text2={item.MainName} />
+                                                    <TitleHeadLight textb2={item.MainName} />
                                                 </div>
-                                                <p className='text-light' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
+                                                <p className='text-dark' data-aos="fade-left" data-aos-duration="2000">{item.ProductDetails}</p>
                                                 <div onClick={() => handleOpen(item)}>
                                                     <AllBtn text='Design Your Box' data-aos="fade-left" data-aos-duration="2000" />
                                                     <p style={{ fontSize: '12px' }} className='text-decoration-underline text-light'>design your custom packaging now!</p>
