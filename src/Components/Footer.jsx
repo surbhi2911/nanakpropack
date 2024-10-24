@@ -9,18 +9,22 @@ function Footer() {
         <>
             <div className='Footerbackground'>
                 <div className='container'>
-                    <div className='row justify-content-center'>
+                    <div className='row justify-content-center '>
                         <div className='col-lg-3 col-sm-6 mt-3 col-10' data-aos="fade" data-aos-duration="2000">
-                            <img src={require('../Assets/Images/Nanak _Main Logo.jpg')} alt="" className='img-fluid border-end border-4' />
+                            <img src={require('../Assets/Images/Nanak _Main Logo.jpg')} alt="" className='img-fluid  ' />
 
                         </div>
-                        <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10' data-aos="fade" data-aos-duration="2000">
-                            <h2>
-                                <FaHandshake className='display-3 rounded-circle p-2 footerHandshake' />
-                            </h2>
-                            <p>Providing innovative and sustainable packaging solutions. Contact us today to elevate your brand with quality packaging.</p>
+                        <div className='col-lg-4 col-sm-6 mt-lg-0 mt-3 col-10  ps-5' data-aos="fade" data-aos-duration="2000">
+                            <div className='border-start border-4 py-3 '>
+                                <div className="ps-4">
+                                    <h2>
+                                        <FaHandshake className='display-3 rounded-circle p-2 footerHandshake' />
+                                    </h2>
+                                    <p>Providing innovative and sustainable packaging solutions. Contact us today to elevate your brand with quality packaging.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-lg-3 col-sm-6 mt-lg-0 mt-3 col-10 ps-md-5' data-aos="fade" data-aos-duration="2000">
+                        <div className='col-lg-2 col-sm-6 mt-lg-0 mt-3 col-10 ps-md-3 ' data-aos="fade" data-aos-duration="2000">
                             <h3 className='lemon'>
                                 Quick Links
                             </h3>

@@ -140,7 +140,11 @@ function Header() {
                                     textDecoration: 'none',
                                 }}
                             >
-                                <img src={require('../Assets/Images/Nanak__Main_Logo-removebg-preview.png')} alt="" className='ms-3' style={{ width: '150px' }} />
+
+                                <div className='p-2' style={{ width: '144px' }}>
+                                    <img src={require('../Assets/Images/Nanak__Main_Logo-removebg-preview.png')} alt="" className='img-fluid ms-3 object-fit-cover' />
+
+                                </div>
                             </Typography>
 
                             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -257,7 +261,7 @@ function Header() {
                                             <Link
                                                 to={"tel:70483113227"}
                                                 className="nav-link navlinkhoverheader fw-bold text-decoration-none"
-                                                
+
                                             >
                                                 <span className="fs-4">
                                                     <img
