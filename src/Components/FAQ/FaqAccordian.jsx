@@ -7,19 +7,6 @@ function FaqAccordian() {
         <>
             <div className='container'>
                 <div className='row justify-content-center align-items-end mb-5'>
-                    {/* <div className='col-lg-4 col-11'>
-                        <div className="row align-items-center">
-                            <div className='display-4 fw-normal col-lg-12 col-sm-6 py-3'>
-
-                                <TitleHeadLight textb1='Quick' textb2='Answers' lineb1='Answers' lineb2='to your packaging questions' />
-                            </div>
-                            <div className='col-lg-12 col-sm-6' data-aos="zoom-in" data-aos-duration='1500'>
-                                <div className="col-12 text-center">
-                                    <img src={require('../../Assets/Images/mainImage/corrugated-boxes (1).jpg')} alt="not Found" className='img-fluid object-fit-cover w-100 h-100' />
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="col-lg-10 col-11"
                         data-aos-anchor="#example-anchor"
                         data-aos-offset="1500"
