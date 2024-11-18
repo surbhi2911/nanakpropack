@@ -2,6 +2,9 @@ import React from 'react'
 import AllBtn from '../AllBtn'
 import { TitleHeadLight } from '../TitleHead'
 import { Link } from 'react-router-dom'
+import { Quote } from 'lucide-react'
+import { BsQuote } from 'react-icons/bs'
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri'
 
 function HomeAbout() {
     return (
@@ -26,7 +29,9 @@ function HomeAbout() {
                             <TitleHeadLight textb1='About' textb2='Us' lineb1='Superior Quality, Pioneering ' lineb2='Packaging Innovations' />
                         </div>
                         <p className='text-spacing lh-lg my-3 ' data-aos='fade-left' data-aos-duration='1200' data-aos-delay='500' style={{ fontFamily: "Open Sans, sans-serif", textAlign: 'justify' }}>
-                            <span className='fs-5 fw-bold'>Welcome to NANAKPROPACK, </span> a leader in innovative packaging solutions dedicated to quality, sustainability, and customer satisfaction.With extensive experience, we specialize in creating a wide range of packaging products—from corrugated boxes to custom-designed cartons—that protect and enhance your products. Our mission is to provide top-tier, eco-friendly packaging that meets your unique needs while promoting your brand's image.  Trust NANAKPROPACK for reliable, customized packaging that makes a difference.
+                            <span className='fs-5 fw-bold'>Welcome to NANAKPROPACK</span><br />
+                            Established in ----, boxiz expertise in all kinds of packaging. In a remarkably short time, we've emerged as a one-of-a-kind company. We not only meet your packaging needs but also help you in your design journey. Transforming basic products into branding portals that make your vision shine. <br />
+                            <span className='fw-bold'><RiDoubleQuotesL /> Transforming Packaging Into Branding <RiDoubleQuotesR /></span>
                         </p>
                         <Link to="/CompanyInfo">
                             <AllBtn text="More About Us" />
