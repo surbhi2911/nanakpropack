@@ -4,7 +4,7 @@ import { HiOutlineBuildingOffice } from 'react-icons/hi2'
 
 function ContactDetails() {
     return (
-        <div className='py-5 black overflow-x-hidden'>
+        <div className='py-5 black overflow-hidden'>
             <div className='container'>
                 <div className='row align-items-center justify-content-evenly text-center'>
                     <div className='col-lg-3 col-md-4 col-sm-9 col-10 mt-md-0 mt-5 py-5 bg-light rounded-0 packaging-border packaging-border-1' data-aos="fade-left" data-aos-duration="2000">
