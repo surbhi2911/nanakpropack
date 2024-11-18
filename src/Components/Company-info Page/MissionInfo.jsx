@@ -3,6 +3,7 @@ import React from 'react'
 import { FaCogs, FaEye, FaRecycle } from 'react-icons/fa'
 import { FaShield } from 'react-icons/fa6'
 import { GiBrassEye } from 'react-icons/gi'
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri'
 import { TbTargetArrow } from 'react-icons/tb'
 
 function MissionInfo() {
@@ -21,7 +22,7 @@ function MissionInfo() {
                                         <TbTargetArrow strokeWidth={1.75} className='text-light fs-2 text-center' />
                                     </div>
                                     <h1 className='text-dark fs-3 pt-2'>Our Mission</h1>
-                                    <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ex?</p>
+                                    <p className='py-2 pb-5'><RiDoubleQuotesL />Committed to Quality, Driven by Innovation <RiDoubleQuotesR /></p>
                                 </div>
                             </div>
                             <div className='col-sm-6 col-12 bg-light text-dark h-100 pb-3' data-aos="flip-left"
@@ -29,11 +30,11 @@ function MissionInfo() {
                                 data-aos-duration="2000"
                                 style={{ borderRadius: "12% 88% 16% 84% / 80% 8% 92% 20%" }}>
                                 <div className="mb-4">
-                                    <div className="p-4 my-2 mx-auto rounded-circle" style={{ width: '40%', backgroundColor: 'var(--orange--)' }}>
+                                    <div className="p-3 my-2 mx-auto rounded-circle" style={{ width: '40%', backgroundColor: 'var(--orange--)' }}>
                                         <GiBrassEye className='text-light text-center fs-2' />
                                     </div>
                                     <h1 className='text-dark fs-3 pt-2'>Our Vision</h1>
-                                    <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ex?</p>
+                                    <p className='py-1'><RiDoubleQuotesL />To create a sustainable packaging technique that eliminates waste by prioritizing reuse, recycling, and composting materials <RiDoubleQuotesR /></p>
                                 </div>
                             </div>
                         </div>
