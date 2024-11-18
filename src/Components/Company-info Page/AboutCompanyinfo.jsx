@@ -4,6 +4,7 @@ import { MdOutlineSupportAgent } from 'react-icons/md'
 import { Sprout } from 'lucide-react'
 import AllBtn from '../AllBtn'
 import { TitleHeadLight } from '../TitleHead'
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri'
 
 const features = [
     {
@@ -33,10 +34,13 @@ function AboutCompanyinfo() {
                     <div className='row d-flex justify-content-center align-items-center align-content-center'>
                         <div className='col-11 col-lg-4 maindiv col-md-12'>
                             <div className='py-5'>
-                                <div className="py-5">
+                                <div className="py-5 pb-3">
                                     <TitleHeadLight textb1='About' textb2='Us' lineb1='Innovative Packaging for a ' lineb2='Sustainable Future' />
                                 </div>
-                                <div className='pb-3' style={{ textAlign: "justify" }} data-aos="fade-left" data-aos-duration='1500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequatur ducimus, vero adipisci, ipsa porro tenetur illo aut expedita laudantium accusamus quibusdam deserunt facere eos fugiat. Ex nisi deleniti minus!</div>
+                                <div className='pb-3' style={{ textAlign: "justify" }} data-aos="fade-left" data-aos-duration='1500'>
+                                    <span className='fw-bold'><RiDoubleQuotesL /> Transforming Packaging Into Branding <RiDoubleQuotesR /></span><br />
+                                    Established in ----, boxiz expertise in all kinds of packaging. In a remarkably short time, we've emerged as a one-of-a-kind company. We not only meet your packaging needs but also help you in your design journey. Transforming basic products into branding portals that make your vision shine. <br />
+                                </div>
                                 <div data-aos="fade-left" data-aos-duration='1500'>
                                     <AllBtn text='Learn More' />
                                 </div>
